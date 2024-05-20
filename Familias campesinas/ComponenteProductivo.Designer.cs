@@ -77,6 +77,7 @@
             this.grbAnalisisDeSuelo = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.grbLongitudLatitud.SuspendLayout();
             this.grbElPredioEs.SuspendLayout();
             this.grbTituloDelPredio.SuspendLayout();
@@ -614,11 +615,22 @@
             this.radioButton2.Text = "Si";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(344, 856);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(347, 21);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "Realiza análisis de suelo para su producción:";
+            // 
             // ComponenteProductivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 1061);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.grbAnalisisDeSuelo);
             this.Controls.Add(this.lblAnalisisDeSuelo);
             this.Controls.Add(this.lbl7);
@@ -712,5 +724,6 @@
         private System.Windows.Forms.GroupBox grbAnalisisDeSuelo;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label1;
     }
 }
