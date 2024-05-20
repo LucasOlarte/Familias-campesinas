@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComponenteProductivo.cs">
+    <Compile Include="ComponenteProductivoP1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ComponenteProductivo.Designer.cs">
-      <DependentUpon>ComponenteProductivo.cs</DependentUpon>
+    <Compile Include="ComponenteProductivoP1.Designer.cs">
+      <DependentUpon>ComponenteProductivoP1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponenteProductivoP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComponenteProductivoP2.Designer.cs">
+      <DependentUpon>ComponenteProductivoP2.cs</DependentUpon>
     </Compile>
     <Compile Include="ComponenteSocialP1.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ComponenteProductivo.resx">
-      <DependentUpon>ComponenteProductivo.cs</DependentUpon>
+    <EmbeddedResource Include="ComponenteProductivoP1.resx">
+      <DependentUpon>ComponenteProductivoP1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponenteProductivoP2.resx">
+      <DependentUpon>ComponenteProductivoP2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComponenteSocialP1.resx">
       <DependentUpon>ComponenteSocialP1.cs</DependentUpon>

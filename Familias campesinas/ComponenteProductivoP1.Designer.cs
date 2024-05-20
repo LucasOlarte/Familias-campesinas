@@ -1,6 +1,6 @@
 ﻿namespace Familias_campesinas
 {
-    partial class ComponenteProductivo
+    partial class ComponenteProductivoP1
     {
         /// <summary>
         /// Required designer variable.
@@ -75,8 +75,11 @@
             this.lbl7 = new System.Windows.Forms.Label();
             this.lblAnalisisDeSuelo = new System.Windows.Forms.Label();
             this.grbAnalisisDeSuelo = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbNoAnalisisDeSuelo = new System.Windows.Forms.RadioButton();
+            this.rdbSiAnalisisDeSuelo = new System.Windows.Forms.RadioButton();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.grbLongitudLatitud.SuspendLayout();
             this.grbElPredioEs.SuspendLayout();
             this.grbTituloDelPredio.SuspendLayout();
@@ -580,45 +583,82 @@
             // 
             // grbAnalisisDeSuelo
             // 
-            this.grbAnalisisDeSuelo.Controls.Add(this.radioButton1);
-            this.grbAnalisisDeSuelo.Controls.Add(this.radioButton2);
+            this.grbAnalisisDeSuelo.Controls.Add(this.rdbNoAnalisisDeSuelo);
+            this.grbAnalisisDeSuelo.Controls.Add(this.rdbSiAnalisisDeSuelo);
             this.grbAnalisisDeSuelo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbAnalisisDeSuelo.Location = new System.Drawing.Point(163, 792);
+            this.grbAnalisisDeSuelo.Location = new System.Drawing.Point(512, 713);
             this.grbAnalisisDeSuelo.Name = "grbAnalisisDeSuelo";
-            this.grbAnalisisDeSuelo.Size = new System.Drawing.Size(192, 61);
+            this.grbAnalisisDeSuelo.Size = new System.Drawing.Size(164, 59);
             this.grbAnalisisDeSuelo.TabIndex = 56;
             this.grbAnalisisDeSuelo.TabStop = false;
             this.grbAnalisisDeSuelo.Text = "Análisis de suelo";
             // 
-            // radioButton1
+            // rdbNoAnalisisDeSuelo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(65, 27);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(51, 25);
-            this.radioButton1.TabIndex = 21;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "No";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbNoAnalisisDeSuelo.AutoSize = true;
+            this.rdbNoAnalisisDeSuelo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNoAnalisisDeSuelo.Location = new System.Drawing.Point(65, 27);
+            this.rdbNoAnalisisDeSuelo.Name = "rdbNoAnalisisDeSuelo";
+            this.rdbNoAnalisisDeSuelo.Size = new System.Drawing.Size(51, 25);
+            this.rdbNoAnalisisDeSuelo.TabIndex = 21;
+            this.rdbNoAnalisisDeSuelo.TabStop = true;
+            this.rdbNoAnalisisDeSuelo.Text = "No";
+            this.rdbNoAnalisisDeSuelo.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbSiAnalisisDeSuelo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(18, 27);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(41, 25);
-            this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Si";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbSiAnalisisDeSuelo.AutoSize = true;
+            this.rdbSiAnalisisDeSuelo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSiAnalisisDeSuelo.Location = new System.Drawing.Point(18, 27);
+            this.rdbSiAnalisisDeSuelo.Name = "rdbSiAnalisisDeSuelo";
+            this.rdbSiAnalisisDeSuelo.Size = new System.Drawing.Size(41, 25);
+            this.rdbSiAnalisisDeSuelo.TabIndex = 20;
+            this.rdbSiAnalisisDeSuelo.TabStop = true;
+            this.rdbSiAnalisisDeSuelo.Text = "Si";
+            this.rdbSiAnalisisDeSuelo.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Crimson;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalir.Location = new System.Drawing.Point(784, 889);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(118, 37);
+            this.btnSalir.TabIndex = 59;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiguiente.Location = new System.Drawing.Point(501, 833);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(145, 56);
+            this.btnSiguiente.TabIndex = 58;
+            this.btnSiguiente.Text = "Siguiente";
+            this.btnSiguiente.UseVisualStyleBackColor = false;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Coral;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(292, 833);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(145, 56);
+            this.btnRegresar.TabIndex = 57;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
             // 
             // ComponenteProductivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 1061);
+            this.ClientSize = new System.Drawing.Size(914, 938);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.grbAnalisisDeSuelo);
             this.Controls.Add(this.lblAnalisisDeSuelo);
             this.Controls.Add(this.lbl7);
@@ -710,7 +750,10 @@
         private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.Label lblAnalisisDeSuelo;
         private System.Windows.Forms.GroupBox grbAnalisisDeSuelo;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbNoAnalisisDeSuelo;
+        private System.Windows.Forms.RadioButton rdbSiAnalisisDeSuelo;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

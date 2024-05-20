@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Familias_campesinas
 {
-    public partial class ComponenteProductivo : Form
+    public partial class ComponenteProductivoP2 : Form
     {
-        public ComponenteProductivo()
+        public ComponenteProductivoP2()
         {
             InitializeComponent();
         }
