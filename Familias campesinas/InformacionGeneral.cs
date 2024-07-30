@@ -16,5 +16,31 @@ namespace Familias_campesinas
         {
             InitializeComponent();
         }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtMunicipio.Text) || string.IsNullOrEmpty(txtSubregion.Text) || string.IsNullOrEmpty(txtVereda.Text) || string.IsNullOrEmpty(txtNombrePredio.Text) || string.IsNullOrEmpty(txtDistanciaPredio.Text) || string.IsNullOrEmpty(txtTiempoTransporte.Text))
+            {
+                MessageBox.Show("Faltan campos por llenar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                ComponenteSocialP1 componenteSocialP1 = new ComponenteSocialP1();
+                componenteSocialP1.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InicioDeSesion inicioDeSesion = new InicioDeSesion();
+            inicioDeSesion.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

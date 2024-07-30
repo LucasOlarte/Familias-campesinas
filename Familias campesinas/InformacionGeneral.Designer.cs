@@ -36,7 +36,7 @@
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtVereda = new System.Windows.Forms.TextBox();
             this.lblVereda = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNombrePredio = new System.Windows.Forms.TextBox();
             this.lblNombreDelPredio = new System.Windows.Forms.Label();
             this.lblElPredioEs = new System.Windows.Forms.Label();
             this.rdbPropio = new System.Windows.Forms.RadioButton();
@@ -50,7 +50,7 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.lblDistanciaCabeceraPredio = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDistanciaPredio = new System.Windows.Forms.TextBox();
             this.lblKm = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lblTransporte = new System.Windows.Forms.Label();
@@ -157,13 +157,13 @@
             this.lblVereda.TabIndex = 15;
             this.lblVereda.Text = "Vereda:";
             // 
-            // textBox4
+            // txtNombrePredio
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(333, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 28);
-            this.textBox4.TabIndex = 18;
+            this.txtNombrePredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrePredio.Location = new System.Drawing.Point(333, 236);
+            this.txtNombrePredio.Name = "txtNombrePredio";
+            this.txtNombrePredio.Size = new System.Drawing.Size(136, 28);
+            this.txtNombrePredio.TabIndex = 18;
             // 
             // lblNombreDelPredio
             // 
@@ -305,14 +305,14 @@
             this.lbl5.TabIndex = 26;
             this.lbl5.Text = "5.";
             // 
-            // textBox2
+            // txtDistanciaPredio
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(620, 381);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(117, 28);
-            this.textBox2.TabIndex = 25;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDistanciaPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDistanciaPredio.Location = new System.Drawing.Point(620, 381);
+            this.txtDistanciaPredio.Name = "txtDistanciaPredio";
+            this.txtDistanciaPredio.Size = new System.Drawing.Size(117, 28);
+            this.txtDistanciaPredio.TabIndex = 25;
+            this.txtDistanciaPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblKm
             // 
@@ -593,6 +593,7 @@
             this.btnRegresar.TabIndex = 36;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnSiguiente
             // 
@@ -604,6 +605,7 @@
             this.btnSiguiente.TabIndex = 37;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnSalir
             // 
@@ -616,6 +618,7 @@
             this.btnSalir.TabIndex = 38;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // InformacionGeneral
             // 
@@ -636,7 +639,7 @@
             this.Controls.Add(this.lblTransporte);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.lblKm);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDistanciaPredio);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lblDistanciaCabeceraPredio);
             this.Controls.Add(this.lbl4);
@@ -644,7 +647,7 @@
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.grbPredio);
             this.Controls.Add(this.lblElPredioEs);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNombrePredio);
             this.Controls.Add(this.lblNombreDelPredio);
             this.Controls.Add(this.txtVereda);
             this.Controls.Add(this.lblVereda);
@@ -677,7 +680,7 @@
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.TextBox txtVereda;
         private System.Windows.Forms.Label lblVereda;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtNombrePredio;
         private System.Windows.Forms.Label lblNombreDelPredio;
         private System.Windows.Forms.Label lblElPredioEs;
         private System.Windows.Forms.RadioButton rdbPropio;
@@ -691,7 +694,7 @@
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.Label lblDistanciaCabeceraPredio;
         private System.Windows.Forms.Label lbl5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDistanciaPredio;
         private System.Windows.Forms.Label lblKm;
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.Label lblTransporte;

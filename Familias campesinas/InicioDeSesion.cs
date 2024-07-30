@@ -16,5 +16,24 @@ namespace Familias_campesinas
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtContraseña.Text) || string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(cmbFuncion.Text))
+            {
+                MessageBox.Show("Faltan campos por llenar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                InformacionGeneral informacionGeneral = new InformacionGeneral();
+                informacionGeneral.Show();
+                this.Hide();
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
