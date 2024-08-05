@@ -16,5 +16,17 @@ namespace Familias_campesinas
         {
             InitializeComponent();
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            InformacionGeneral informacionGeneral = new InformacionGeneral();
+            informacionGeneral.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

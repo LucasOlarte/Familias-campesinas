@@ -693,6 +693,7 @@
             this.btnSalir.TabIndex = 41;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnSiguiente
             // 
@@ -715,6 +716,7 @@
             this.btnRegresar.TabIndex = 39;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // ComponenteSocialP1
             // 
@@ -754,6 +756,7 @@
             this.Controls.Add(this.lblInfoGeneral);
             this.Controls.Add(this.TituloComponenteSocial);
             this.Name = "ComponenteSocialP1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "ComponenteSocial";
             this.grbCampesino.ResumeLayout(false);
             this.grbCampesino.PerformLayout();

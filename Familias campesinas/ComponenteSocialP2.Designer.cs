@@ -52,10 +52,10 @@
             this.lbl10 = new System.Windows.Forms.Label();
             this.lblNucleoVereda = new System.Windows.Forms.Label();
             this.grbNacidosEnVereda = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.txtNacidosEnLaVereda = new System.Windows.Forms.TextBox();
             this.lblCuantosNacieron = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -331,6 +331,25 @@
             this.grbNacidosEnVereda.TabStop = false;
             this.grbNacidosEnVereda.Text = "Todo el núcleo familiar nació en la vererda";
             // 
+            // txtNacidosEnLaVereda
+            // 
+            this.txtNacidosEnLaVereda.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNacidosEnLaVereda.Location = new System.Drawing.Point(387, 26);
+            this.txtNacidosEnLaVereda.Name = "txtNacidosEnLaVereda";
+            this.txtNacidosEnLaVereda.Size = new System.Drawing.Size(71, 28);
+            this.txtNacidosEnLaVereda.TabIndex = 30;
+            this.txtNacidosEnLaVereda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblCuantosNacieron
+            // 
+            this.lblCuantosNacieron.AutoSize = true;
+            this.lblCuantosNacieron.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCuantosNacieron.Location = new System.Drawing.Point(119, 29);
+            this.lblCuantosNacieron.Name = "lblCuantosNacieron";
+            this.lblCuantosNacieron.Size = new System.Drawing.Size(262, 21);
+            this.lblCuantosNacieron.TabIndex = 31;
+            this.lblCuantosNacieron.Text = "¿Cuántos nacieron en la vereda?:";
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -355,25 +374,6 @@
             this.radioButton2.Text = "Si";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // txtNacidosEnLaVereda
-            // 
-            this.txtNacidosEnLaVereda.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNacidosEnLaVereda.Location = new System.Drawing.Point(387, 26);
-            this.txtNacidosEnLaVereda.Name = "txtNacidosEnLaVereda";
-            this.txtNacidosEnLaVereda.Size = new System.Drawing.Size(71, 28);
-            this.txtNacidosEnLaVereda.TabIndex = 30;
-            this.txtNacidosEnLaVereda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblCuantosNacieron
-            // 
-            this.lblCuantosNacieron.AutoSize = true;
-            this.lblCuantosNacieron.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCuantosNacieron.Location = new System.Drawing.Point(119, 29);
-            this.lblCuantosNacieron.Name = "lblCuantosNacieron";
-            this.lblCuantosNacieron.Size = new System.Drawing.Size(262, 21);
-            this.lblCuantosNacieron.TabIndex = 31;
-            this.lblCuantosNacieron.Text = "¿Cuántos nacieron en la vereda?:";
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
@@ -385,6 +385,7 @@
             this.btnSalir.TabIndex = 45;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnSiguiente
             // 
@@ -407,6 +408,7 @@
             this.btnRegresar.TabIndex = 43;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // ComponenteSocialP2
             // 

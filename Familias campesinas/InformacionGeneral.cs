@@ -19,7 +19,7 @@ namespace Familias_campesinas
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtMunicipio.Text) || string.IsNullOrEmpty(txtSubregion.Text) || string.IsNullOrEmpty(txtVereda.Text) || string.IsNullOrEmpty(txtNombrePredio.Text) || string.IsNullOrEmpty(txtDistanciaPredio.Text) || string.IsNullOrEmpty(txtTiempoTransporte.Text))
+            if (string.IsNullOrEmpty(txtMunicipio.Text) || string.IsNullOrEmpty(txtSubregion.Text) || string.IsNullOrEmpty(txtVereda.Text) || string.IsNullOrEmpty(txtNombrePredio.Text) || string.IsNullOrEmpty(txtDistanciaPredio.Text))
             {
                 MessageBox.Show("Faltan campos por llenar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

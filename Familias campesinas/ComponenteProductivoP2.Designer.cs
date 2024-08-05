@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.grbBuenasPracticas = new System.Windows.Forms.GroupBox();
+            this.txtCultivosBPA = new System.Windows.Forms.TextBox();
+            this.lblImplementaBPA = new System.Windows.Forms.Label();
+            this.rdbNoBPA = new System.Windows.Forms.RadioButton();
+            this.rdbSiBPA = new System.Windows.Forms.RadioButton();
             this.lblBuenasPracticas = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
             this.TituloComponenteProductivo = new System.Windows.Forms.Label();
-            this.rdbSiBPA = new System.Windows.Forms.RadioButton();
-            this.rdbNoBPA = new System.Windows.Forms.RadioButton();
-            this.txtCultivosBPA = new System.Windows.Forms.TextBox();
-            this.lblImplementaBPA = new System.Windows.Forms.Label();
             this.lbl9 = new System.Windows.Forms.Label();
             this.lblManejoControlPlagas = new System.Windows.Forms.Label();
             this.grbControlDePlagas = new System.Windows.Forms.GroupBox();
             this.grbTituloDelPredio = new System.Windows.Forms.GroupBox();
+            this.txtOtroControlDePlagas = new System.Windows.Forms.TextBox();
+            this.lblOtroControlDePlagas = new System.Windows.Forms.Label();
+            this.rdbControlFisico = new System.Windows.Forms.RadioButton();
+            this.rdbControlBiologico = new System.Windows.Forms.RadioButton();
             this.rdbControlOrganico = new System.Windows.Forms.RadioButton();
             this.rdbControlConQuimicos = new System.Windows.Forms.RadioButton();
             this.lblControlDePlagas = new System.Windows.Forms.Label();
             this.rdbNoControlDePlagas = new System.Windows.Forms.RadioButton();
             this.rdbSiControlDePlagas = new System.Windows.Forms.RadioButton();
-            this.rdbControlBiologico = new System.Windows.Forms.RadioButton();
-            this.rdbControlFisico = new System.Windows.Forms.RadioButton();
-            this.lblOtroControlDePlagas = new System.Windows.Forms.Label();
-            this.txtOtroControlDePlagas = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
@@ -70,6 +70,48 @@
             this.grbBuenasPracticas.TabIndex = 42;
             this.grbBuenasPracticas.TabStop = false;
             this.grbBuenasPracticas.Text = "Buenas Prácticas Agrícolas";
+            // 
+            // txtCultivosBPA
+            // 
+            this.txtCultivosBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCultivosBPA.Location = new System.Drawing.Point(418, 25);
+            this.txtCultivosBPA.Name = "txtCultivosBPA";
+            this.txtCultivosBPA.Size = new System.Drawing.Size(153, 28);
+            this.txtCultivosBPA.TabIndex = 56;
+            // 
+            // lblImplementaBPA
+            // 
+            this.lblImplementaBPA.AutoSize = true;
+            this.lblImplementaBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImplementaBPA.Location = new System.Drawing.Point(110, 28);
+            this.lblImplementaBPA.Name = "lblImplementaBPA";
+            this.lblImplementaBPA.Size = new System.Drawing.Size(302, 21);
+            this.lblImplementaBPA.TabIndex = 55;
+            this.lblImplementaBPA.Text = "Si las implementa ¿En cuáles cultivos?:";
+            // 
+            // rdbNoBPA
+            // 
+            this.rdbNoBPA.AutoSize = true;
+            this.rdbNoBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNoBPA.Location = new System.Drawing.Point(53, 26);
+            this.rdbNoBPA.Name = "rdbNoBPA";
+            this.rdbNoBPA.Size = new System.Drawing.Size(51, 25);
+            this.rdbNoBPA.TabIndex = 22;
+            this.rdbNoBPA.TabStop = true;
+            this.rdbNoBPA.Text = "No";
+            this.rdbNoBPA.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiBPA
+            // 
+            this.rdbSiBPA.AutoSize = true;
+            this.rdbSiBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSiBPA.Location = new System.Drawing.Point(6, 26);
+            this.rdbSiBPA.Name = "rdbSiBPA";
+            this.rdbSiBPA.Size = new System.Drawing.Size(41, 25);
+            this.rdbSiBPA.TabIndex = 21;
+            this.rdbSiBPA.TabStop = true;
+            this.rdbSiBPA.Text = "Si";
+            this.rdbSiBPA.UseVisualStyleBackColor = true;
             // 
             // lblBuenasPracticas
             // 
@@ -100,48 +142,6 @@
             this.TituloComponenteProductivo.Size = new System.Drawing.Size(353, 40);
             this.TituloComponenteProductivo.TabIndex = 39;
             this.TituloComponenteProductivo.Text = "Componente productivo";
-            // 
-            // rdbSiBPA
-            // 
-            this.rdbSiBPA.AutoSize = true;
-            this.rdbSiBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSiBPA.Location = new System.Drawing.Point(6, 26);
-            this.rdbSiBPA.Name = "rdbSiBPA";
-            this.rdbSiBPA.Size = new System.Drawing.Size(41, 25);
-            this.rdbSiBPA.TabIndex = 21;
-            this.rdbSiBPA.TabStop = true;
-            this.rdbSiBPA.Text = "Si";
-            this.rdbSiBPA.UseVisualStyleBackColor = true;
-            // 
-            // rdbNoBPA
-            // 
-            this.rdbNoBPA.AutoSize = true;
-            this.rdbNoBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNoBPA.Location = new System.Drawing.Point(53, 26);
-            this.rdbNoBPA.Name = "rdbNoBPA";
-            this.rdbNoBPA.Size = new System.Drawing.Size(51, 25);
-            this.rdbNoBPA.TabIndex = 22;
-            this.rdbNoBPA.TabStop = true;
-            this.rdbNoBPA.Text = "No";
-            this.rdbNoBPA.UseVisualStyleBackColor = true;
-            // 
-            // txtCultivosBPA
-            // 
-            this.txtCultivosBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCultivosBPA.Location = new System.Drawing.Point(418, 25);
-            this.txtCultivosBPA.Name = "txtCultivosBPA";
-            this.txtCultivosBPA.Size = new System.Drawing.Size(153, 28);
-            this.txtCultivosBPA.TabIndex = 56;
-            // 
-            // lblImplementaBPA
-            // 
-            this.lblImplementaBPA.AutoSize = true;
-            this.lblImplementaBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImplementaBPA.Location = new System.Drawing.Point(110, 28);
-            this.lblImplementaBPA.Name = "lblImplementaBPA";
-            this.lblImplementaBPA.Size = new System.Drawing.Size(302, 21);
-            this.lblImplementaBPA.TabIndex = 55;
-            this.lblImplementaBPA.Text = "Si las implementa ¿En cuáles cultivos?:";
             // 
             // lbl9
             // 
@@ -192,6 +192,48 @@
             this.grbTituloDelPredio.TabIndex = 52;
             this.grbTituloDelPredio.TabStop = false;
             this.grbTituloDelPredio.Text = "Método de control";
+            // 
+            // txtOtroControlDePlagas
+            // 
+            this.txtOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtroControlDePlagas.Location = new System.Drawing.Point(116, 52);
+            this.txtOtroControlDePlagas.Name = "txtOtroControlDePlagas";
+            this.txtOtroControlDePlagas.Size = new System.Drawing.Size(153, 28);
+            this.txtOtroControlDePlagas.TabIndex = 57;
+            // 
+            // lblOtroControlDePlagas
+            // 
+            this.lblOtroControlDePlagas.AutoSize = true;
+            this.lblOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOtroControlDePlagas.Location = new System.Drawing.Point(6, 55);
+            this.lblOtroControlDePlagas.Name = "lblOtroControlDePlagas";
+            this.lblOtroControlDePlagas.Size = new System.Drawing.Size(104, 21);
+            this.lblOtroControlDePlagas.TabIndex = 53;
+            this.lblOtroControlDePlagas.Text = "Otro ¿Cuál?:";
+            // 
+            // rdbControlFisico
+            // 
+            this.rdbControlFisico.AutoSize = true;
+            this.rdbControlFisico.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbControlFisico.Location = new System.Drawing.Point(351, 27);
+            this.rdbControlFisico.Name = "rdbControlFisico";
+            this.rdbControlFisico.Size = new System.Drawing.Size(70, 25);
+            this.rdbControlFisico.TabIndex = 23;
+            this.rdbControlFisico.TabStop = true;
+            this.rdbControlFisico.Text = "Físico";
+            this.rdbControlFisico.UseVisualStyleBackColor = true;
+            // 
+            // rdbControlBiologico
+            // 
+            this.rdbControlBiologico.AutoSize = true;
+            this.rdbControlBiologico.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbControlBiologico.Location = new System.Drawing.Point(247, 27);
+            this.rdbControlBiologico.Name = "rdbControlBiologico";
+            this.rdbControlBiologico.Size = new System.Drawing.Size(98, 25);
+            this.rdbControlBiologico.TabIndex = 22;
+            this.rdbControlBiologico.TabStop = true;
+            this.rdbControlBiologico.Text = "Biológico";
+            this.rdbControlBiologico.UseVisualStyleBackColor = true;
             // 
             // rdbControlOrganico
             // 
@@ -251,48 +293,6 @@
             this.rdbSiControlDePlagas.Text = "Si";
             this.rdbSiControlDePlagas.UseVisualStyleBackColor = true;
             // 
-            // rdbControlBiologico
-            // 
-            this.rdbControlBiologico.AutoSize = true;
-            this.rdbControlBiologico.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbControlBiologico.Location = new System.Drawing.Point(247, 27);
-            this.rdbControlBiologico.Name = "rdbControlBiologico";
-            this.rdbControlBiologico.Size = new System.Drawing.Size(98, 25);
-            this.rdbControlBiologico.TabIndex = 22;
-            this.rdbControlBiologico.TabStop = true;
-            this.rdbControlBiologico.Text = "Biológico";
-            this.rdbControlBiologico.UseVisualStyleBackColor = true;
-            // 
-            // rdbControlFisico
-            // 
-            this.rdbControlFisico.AutoSize = true;
-            this.rdbControlFisico.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbControlFisico.Location = new System.Drawing.Point(351, 27);
-            this.rdbControlFisico.Name = "rdbControlFisico";
-            this.rdbControlFisico.Size = new System.Drawing.Size(70, 25);
-            this.rdbControlFisico.TabIndex = 23;
-            this.rdbControlFisico.TabStop = true;
-            this.rdbControlFisico.Text = "Físico";
-            this.rdbControlFisico.UseVisualStyleBackColor = true;
-            // 
-            // lblOtroControlDePlagas
-            // 
-            this.lblOtroControlDePlagas.AutoSize = true;
-            this.lblOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOtroControlDePlagas.Location = new System.Drawing.Point(6, 55);
-            this.lblOtroControlDePlagas.Name = "lblOtroControlDePlagas";
-            this.lblOtroControlDePlagas.Size = new System.Drawing.Size(104, 21);
-            this.lblOtroControlDePlagas.TabIndex = 53;
-            this.lblOtroControlDePlagas.Text = "Otro ¿Cuál?:";
-            // 
-            // txtOtroControlDePlagas
-            // 
-            this.txtOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtroControlDePlagas.Location = new System.Drawing.Point(116, 52);
-            this.txtOtroControlDePlagas.Name = "txtOtroControlDePlagas";
-            this.txtOtroControlDePlagas.Size = new System.Drawing.Size(153, 28);
-            this.txtOtroControlDePlagas.TabIndex = 57;
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
@@ -304,6 +304,7 @@
             this.btnSalir.TabIndex = 62;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -326,6 +327,7 @@
             this.btnRegresar.TabIndex = 60;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // ComponenteProductivoP2
             // 

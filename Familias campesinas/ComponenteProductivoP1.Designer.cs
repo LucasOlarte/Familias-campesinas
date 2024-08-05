@@ -32,10 +32,10 @@
             this.lbl1 = new System.Windows.Forms.Label();
             this.lblUbicacionPredio = new System.Windows.Forms.Label();
             this.grbLongitudLatitud = new System.Windows.Forms.GroupBox();
-            this.txtLatitud = new System.Windows.Forms.TextBox();
-            this.lblLatitud = new System.Windows.Forms.Label();
             this.lblLongitud = new System.Windows.Forms.Label();
             this.txtLongitud = new System.Windows.Forms.TextBox();
+            this.lblLatitud = new System.Windows.Forms.Label();
+            this.txtLatitud = new System.Windows.Forms.TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lblAlturaSobreNivelDelMar = new System.Windows.Forms.Label();
             this.txtAlturaSobreNivelDelMar = new System.Windows.Forms.TextBox();
@@ -46,32 +46,32 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.lblElPredioEs = new System.Windows.Forms.Label();
             this.grbElPredioEs = new System.Windows.Forms.GroupBox();
+            this.txtPagoArriendoPredio = new System.Windows.Forms.TextBox();
+            this.lblPredioArrendado = new System.Windows.Forms.Label();
+            this.grbTituloDelPredio = new System.Windows.Forms.GroupBox();
+            this.rdbNoTituloPredio = new System.Windows.Forms.RadioButton();
+            this.rdbSiTituloPredio = new System.Windows.Forms.RadioButton();
+            this.lblPredioPropio = new System.Windows.Forms.Label();
+            this.lblTiempoOcupacionPredio = new System.Windows.Forms.Label();
             this.lblAños = new System.Windows.Forms.Label();
             this.txtTiempoOcupacionPredio = new System.Windows.Forms.TextBox();
             this.rdbArrendado = new System.Windows.Forms.RadioButton();
             this.rdbPredioPropio = new System.Windows.Forms.RadioButton();
-            this.lblTiempoOcupacionPredio = new System.Windows.Forms.Label();
-            this.lblPredioPropio = new System.Windows.Forms.Label();
-            this.grbTituloDelPredio = new System.Windows.Forms.GroupBox();
-            this.rdbNoTituloPredio = new System.Windows.Forms.RadioButton();
-            this.rdbSiTituloPredio = new System.Windows.Forms.RadioButton();
-            this.lblPredioArrendado = new System.Windows.Forms.Label();
-            this.txtPagoArriendoPredio = new System.Windows.Forms.TextBox();
             this.lbl5 = new System.Windows.Forms.Label();
             this.lblActividadDelPreio = new System.Windows.Forms.Label();
             this.grbActividadDelPredio = new System.Windows.Forms.GroupBox();
+            this.rdbTurismo = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.rdbOtroActividadDelPredio = new System.Windows.Forms.RadioButton();
             this.rdbPecuaria = new System.Windows.Forms.RadioButton();
             this.rdbAgricola = new System.Windows.Forms.RadioButton();
-            this.rdbTurismo = new System.Windows.Forms.RadioButton();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lblSiembraMaterial = new System.Windows.Forms.Label();
             this.grbMaterialVegetal = new System.Windows.Forms.GroupBox();
+            this.lblCompraMaterial = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.rdbNoMaterialC = new System.Windows.Forms.RadioButton();
             this.rdbSiMaterialC = new System.Windows.Forms.RadioButton();
-            this.lblCompraMaterial = new System.Windows.Forms.Label();
             this.lbl7 = new System.Windows.Forms.Label();
             this.lblAnalisisDeSuelo = new System.Windows.Forms.Label();
             this.grbAnalisisDeSuelo = new System.Windows.Forms.GroupBox();
@@ -132,25 +132,6 @@
             this.grbLongitudLatitud.TabStop = false;
             this.grbLongitudLatitud.Text = "Tiempo en la organización";
             // 
-            // txtLatitud
-            // 
-            this.txtLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatitud.Location = new System.Drawing.Point(75, 23);
-            this.txtLatitud.Name = "txtLatitud";
-            this.txtLatitud.Size = new System.Drawing.Size(101, 28);
-            this.txtLatitud.TabIndex = 33;
-            this.txtLatitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblLatitud
-            // 
-            this.lblLatitud.AutoSize = true;
-            this.lblLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLatitud.Location = new System.Drawing.Point(6, 26);
-            this.lblLatitud.Name = "lblLatitud";
-            this.lblLatitud.Size = new System.Drawing.Size(63, 21);
-            this.lblLatitud.TabIndex = 39;
-            this.lblLatitud.Text = "Latitud";
-            // 
             // lblLongitud
             // 
             this.lblLongitud.AutoSize = true;
@@ -169,6 +150,25 @@
             this.txtLongitud.Size = new System.Drawing.Size(101, 28);
             this.txtLongitud.TabIndex = 40;
             this.txtLongitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblLatitud
+            // 
+            this.lblLatitud.AutoSize = true;
+            this.lblLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLatitud.Location = new System.Drawing.Point(6, 26);
+            this.lblLatitud.Name = "lblLatitud";
+            this.lblLatitud.Size = new System.Drawing.Size(63, 21);
+            this.lblLatitud.TabIndex = 39;
+            this.lblLatitud.Text = "Latitud";
+            // 
+            // txtLatitud
+            // 
+            this.txtLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLatitud.Location = new System.Drawing.Point(75, 23);
+            this.txtLatitud.Name = "txtLatitud";
+            this.txtLatitud.Size = new System.Drawing.Size(101, 28);
+            this.txtLatitud.TabIndex = 33;
+            this.txtLatitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbl2
             // 
@@ -276,6 +276,81 @@
             this.grbElPredioEs.TabStop = false;
             this.grbElPredioEs.Text = "Predio";
             // 
+            // txtPagoArriendoPredio
+            // 
+            this.txtPagoArriendoPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoArriendoPredio.Location = new System.Drawing.Point(326, 160);
+            this.txtPagoArriendoPredio.Name = "txtPagoArriendoPredio";
+            this.txtPagoArriendoPredio.Size = new System.Drawing.Size(138, 28);
+            this.txtPagoArriendoPredio.TabIndex = 54;
+            this.txtPagoArriendoPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lblPredioArrendado
+            // 
+            this.lblPredioArrendado.AutoSize = true;
+            this.lblPredioArrendado.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPredioArrendado.Location = new System.Drawing.Point(6, 146);
+            this.lblPredioArrendado.Name = "lblPredioArrendado";
+            this.lblPredioArrendado.Size = new System.Drawing.Size(314, 42);
+            this.lblPredioArrendado.TabIndex = 53;
+            this.lblPredioArrendado.Text = "Si el predio es arrendado, \r\n¿Cuánto paga mensualmente por éste?:";
+            // 
+            // grbTituloDelPredio
+            // 
+            this.grbTituloDelPredio.Controls.Add(this.rdbNoTituloPredio);
+            this.grbTituloDelPredio.Controls.Add(this.rdbSiTituloPredio);
+            this.grbTituloDelPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbTituloDelPredio.Location = new System.Drawing.Point(298, 86);
+            this.grbTituloDelPredio.Name = "grbTituloDelPredio";
+            this.grbTituloDelPredio.Size = new System.Drawing.Size(187, 57);
+            this.grbTituloDelPredio.TabIndex = 52;
+            this.grbTituloDelPredio.TabStop = false;
+            this.grbTituloDelPredio.Text = "El predio posee título";
+            // 
+            // rdbNoTituloPredio
+            // 
+            this.rdbNoTituloPredio.AutoSize = true;
+            this.rdbNoTituloPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNoTituloPredio.Location = new System.Drawing.Point(92, 26);
+            this.rdbNoTituloPredio.Name = "rdbNoTituloPredio";
+            this.rdbNoTituloPredio.Size = new System.Drawing.Size(51, 25);
+            this.rdbNoTituloPredio.TabIndex = 21;
+            this.rdbNoTituloPredio.TabStop = true;
+            this.rdbNoTituloPredio.Text = "No";
+            this.rdbNoTituloPredio.UseVisualStyleBackColor = true;
+            // 
+            // rdbSiTituloPredio
+            // 
+            this.rdbSiTituloPredio.AutoSize = true;
+            this.rdbSiTituloPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSiTituloPredio.Location = new System.Drawing.Point(45, 26);
+            this.rdbSiTituloPredio.Name = "rdbSiTituloPredio";
+            this.rdbSiTituloPredio.Size = new System.Drawing.Size(41, 25);
+            this.rdbSiTituloPredio.TabIndex = 20;
+            this.rdbSiTituloPredio.TabStop = true;
+            this.rdbSiTituloPredio.Text = "Si";
+            this.rdbSiTituloPredio.UseVisualStyleBackColor = true;
+            // 
+            // lblPredioPropio
+            // 
+            this.lblPredioPropio.AutoSize = true;
+            this.lblPredioPropio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPredioPropio.Location = new System.Drawing.Point(6, 107);
+            this.lblPredioPropio.Name = "lblPredioPropio";
+            this.lblPredioPropio.Size = new System.Drawing.Size(286, 21);
+            this.lblPredioPropio.TabIndex = 51;
+            this.lblPredioPropio.Text = "Si el predio es propio ¿Posee título?:";
+            // 
+            // lblTiempoOcupacionPredio
+            // 
+            this.lblTiempoOcupacionPredio.AutoSize = true;
+            this.lblTiempoOcupacionPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTiempoOcupacionPredio.Location = new System.Drawing.Point(6, 55);
+            this.lblTiempoOcupacionPredio.Name = "lblTiempoOcupacionPredio";
+            this.lblTiempoOcupacionPredio.Size = new System.Drawing.Size(261, 21);
+            this.lblTiempoOcupacionPredio.TabIndex = 50;
+            this.lblTiempoOcupacionPredio.Text = "Tiempo de ocupación del predio:";
+            // 
             // lblAños
             // 
             this.lblAños.AutoSize = true;
@@ -319,81 +394,6 @@
             this.rdbPredioPropio.Text = "Propio";
             this.rdbPredioPropio.UseVisualStyleBackColor = true;
             // 
-            // lblTiempoOcupacionPredio
-            // 
-            this.lblTiempoOcupacionPredio.AutoSize = true;
-            this.lblTiempoOcupacionPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTiempoOcupacionPredio.Location = new System.Drawing.Point(6, 55);
-            this.lblTiempoOcupacionPredio.Name = "lblTiempoOcupacionPredio";
-            this.lblTiempoOcupacionPredio.Size = new System.Drawing.Size(261, 21);
-            this.lblTiempoOcupacionPredio.TabIndex = 50;
-            this.lblTiempoOcupacionPredio.Text = "Tiempo de ocupación del predio:";
-            // 
-            // lblPredioPropio
-            // 
-            this.lblPredioPropio.AutoSize = true;
-            this.lblPredioPropio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPredioPropio.Location = new System.Drawing.Point(6, 107);
-            this.lblPredioPropio.Name = "lblPredioPropio";
-            this.lblPredioPropio.Size = new System.Drawing.Size(286, 21);
-            this.lblPredioPropio.TabIndex = 51;
-            this.lblPredioPropio.Text = "Si el predio es propio ¿Posee título?:";
-            // 
-            // grbTituloDelPredio
-            // 
-            this.grbTituloDelPredio.Controls.Add(this.rdbNoTituloPredio);
-            this.grbTituloDelPredio.Controls.Add(this.rdbSiTituloPredio);
-            this.grbTituloDelPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTituloDelPredio.Location = new System.Drawing.Point(298, 86);
-            this.grbTituloDelPredio.Name = "grbTituloDelPredio";
-            this.grbTituloDelPredio.Size = new System.Drawing.Size(187, 57);
-            this.grbTituloDelPredio.TabIndex = 52;
-            this.grbTituloDelPredio.TabStop = false;
-            this.grbTituloDelPredio.Text = "El predio posee título";
-            // 
-            // rdbNoTituloPredio
-            // 
-            this.rdbNoTituloPredio.AutoSize = true;
-            this.rdbNoTituloPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNoTituloPredio.Location = new System.Drawing.Point(92, 26);
-            this.rdbNoTituloPredio.Name = "rdbNoTituloPredio";
-            this.rdbNoTituloPredio.Size = new System.Drawing.Size(51, 25);
-            this.rdbNoTituloPredio.TabIndex = 21;
-            this.rdbNoTituloPredio.TabStop = true;
-            this.rdbNoTituloPredio.Text = "No";
-            this.rdbNoTituloPredio.UseVisualStyleBackColor = true;
-            // 
-            // rdbSiTituloPredio
-            // 
-            this.rdbSiTituloPredio.AutoSize = true;
-            this.rdbSiTituloPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSiTituloPredio.Location = new System.Drawing.Point(45, 26);
-            this.rdbSiTituloPredio.Name = "rdbSiTituloPredio";
-            this.rdbSiTituloPredio.Size = new System.Drawing.Size(41, 25);
-            this.rdbSiTituloPredio.TabIndex = 20;
-            this.rdbSiTituloPredio.TabStop = true;
-            this.rdbSiTituloPredio.Text = "Si";
-            this.rdbSiTituloPredio.UseVisualStyleBackColor = true;
-            // 
-            // lblPredioArrendado
-            // 
-            this.lblPredioArrendado.AutoSize = true;
-            this.lblPredioArrendado.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPredioArrendado.Location = new System.Drawing.Point(6, 146);
-            this.lblPredioArrendado.Name = "lblPredioArrendado";
-            this.lblPredioArrendado.Size = new System.Drawing.Size(314, 42);
-            this.lblPredioArrendado.TabIndex = 53;
-            this.lblPredioArrendado.Text = "Si el predio es arrendado, \r\n¿Cuánto paga mensualmente por éste?:";
-            // 
-            // txtPagoArriendoPredio
-            // 
-            this.txtPagoArriendoPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoArriendoPredio.Location = new System.Drawing.Point(326, 160);
-            this.txtPagoArriendoPredio.Name = "txtPagoArriendoPredio";
-            this.txtPagoArriendoPredio.Size = new System.Drawing.Size(138, 28);
-            this.txtPagoArriendoPredio.TabIndex = 54;
-            this.txtPagoArriendoPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lbl5
             // 
             this.lbl5.AutoSize = true;
@@ -428,6 +428,18 @@
             this.grbActividadDelPredio.TabIndex = 52;
             this.grbActividadDelPredio.TabStop = false;
             this.grbActividadDelPredio.Text = "Actividad del predio";
+            // 
+            // rdbTurismo
+            // 
+            this.rdbTurismo.AutoSize = true;
+            this.rdbTurismo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbTurismo.Location = new System.Drawing.Point(201, 27);
+            this.rdbTurismo.Name = "rdbTurismo";
+            this.rdbTurismo.Size = new System.Drawing.Size(89, 25);
+            this.rdbTurismo.TabIndex = 33;
+            this.rdbTurismo.TabStop = true;
+            this.rdbTurismo.Text = "Turismo";
+            this.rdbTurismo.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -473,18 +485,6 @@
             this.rdbAgricola.Text = "Agrícola";
             this.rdbAgricola.UseVisualStyleBackColor = true;
             // 
-            // rdbTurismo
-            // 
-            this.rdbTurismo.AutoSize = true;
-            this.rdbTurismo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbTurismo.Location = new System.Drawing.Point(201, 27);
-            this.rdbTurismo.Name = "rdbTurismo";
-            this.rdbTurismo.Size = new System.Drawing.Size(89, 25);
-            this.rdbTurismo.TabIndex = 33;
-            this.rdbTurismo.TabStop = true;
-            this.rdbTurismo.Text = "Turismo";
-            this.rdbTurismo.UseVisualStyleBackColor = true;
-            // 
             // lbl6
             // 
             this.lbl6.AutoSize = true;
@@ -519,6 +519,16 @@
             this.grbMaterialVegetal.TabStop = false;
             this.grbMaterialVegetal.Text = "Material certificado";
             // 
+            // lblCompraMaterial
+            // 
+            this.lblCompraMaterial.AutoSize = true;
+            this.lblCompraMaterial.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompraMaterial.Location = new System.Drawing.Point(11, 55);
+            this.lblCompraMaterial.Name = "lblCompraMaterial";
+            this.lblCompraMaterial.Size = new System.Drawing.Size(471, 21);
+            this.lblCompraMaterial.TabIndex = 55;
+            this.lblCompraMaterial.Text = "Si compra material vegetal certificado, ¿para cuales cultivos?";
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -550,16 +560,6 @@
             this.rdbSiMaterialC.TabStop = true;
             this.rdbSiMaterialC.Text = "Si";
             this.rdbSiMaterialC.UseVisualStyleBackColor = true;
-            // 
-            // lblCompraMaterial
-            // 
-            this.lblCompraMaterial.AutoSize = true;
-            this.lblCompraMaterial.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompraMaterial.Location = new System.Drawing.Point(11, 55);
-            this.lblCompraMaterial.Name = "lblCompraMaterial";
-            this.lblCompraMaterial.Size = new System.Drawing.Size(471, 21);
-            this.lblCompraMaterial.TabIndex = 55;
-            this.lblCompraMaterial.Text = "Si compra material vegetal certificado, ¿para cuales cultivos?";
             // 
             // lbl7
             // 
@@ -628,6 +628,7 @@
             this.btnSalir.TabIndex = 59;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnSiguiente
             // 
@@ -650,8 +651,9 @@
             this.btnRegresar.TabIndex = 57;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // ComponenteProductivo
+            // ComponenteProductivoP1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -682,7 +684,7 @@
             this.Controls.Add(this.lblUbicacionPredio);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.TituloComponenteProductivo);
-            this.Name = "ComponenteProductivo";
+            this.Name = "ComponenteProductivoP1";
             this.Text = "ComponenteProductivo";
             this.grbLongitudLatitud.ResumeLayout(false);
             this.grbLongitudLatitud.PerformLayout();
