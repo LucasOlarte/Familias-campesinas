@@ -607,6 +607,7 @@
             // 
             // cmbMunicipio
             // 
+            this.cmbMunicipio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMunicipio.FormattingEnabled = true;
             this.cmbMunicipio.Items.AddRange(new object[] {
             "Alejandría",
@@ -635,6 +636,7 @@
             // 
             // cmbSubregion
             // 
+            this.cmbSubregion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSubregion.FormattingEnabled = true;
             this.cmbSubregion.Items.AddRange(new object[] {
             "Bajo Cauca ",

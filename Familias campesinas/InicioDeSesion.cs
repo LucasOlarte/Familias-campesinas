@@ -25,9 +25,16 @@ namespace Familias_campesinas
             }
             else
             {
-                InformacionGeneral informacionGeneral = new InformacionGeneral();
-                informacionGeneral.Show();
-                this.Hide();
+                if (txtUsuario.Text == "Usuario1" && txtContraseña.Text == "1234")
+                {
+                    InformacionGeneral informacionGeneral = new InformacionGeneral();
+                    informacionGeneral.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

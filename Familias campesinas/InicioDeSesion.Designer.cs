@@ -62,6 +62,7 @@
             // 
             // cmbFuncion
             // 
+            this.cmbFuncion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFuncion.FormattingEnabled = true;
             this.cmbFuncion.Items.AddRange(new object[] {
             "Familia campesina (Usuario)",
