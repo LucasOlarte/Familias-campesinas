@@ -31,22 +31,16 @@
             this.TituloComponenteProductivo = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lblUbicacionPredio = new System.Windows.Forms.Label();
-            this.grbLongitudLatitud = new System.Windows.Forms.GroupBox();
-            this.lblLongitud = new System.Windows.Forms.Label();
-            this.txtLongitud = new System.Windows.Forms.TextBox();
-            this.lblLatitud = new System.Windows.Forms.Label();
-            this.txtLatitud = new System.Windows.Forms.TextBox();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lblAlturaSobreNivelDelMar = new System.Windows.Forms.Label();
-            this.txtAlturaSobreNivelDelMar = new System.Windows.Forms.TextBox();
             this.lblMSNM = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lblAreaPredio = new System.Windows.Forms.Label();
-            this.txtAreaPredio = new System.Windows.Forms.TextBox();
             this.lbl4 = new System.Windows.Forms.Label();
             this.lblElPredioEs = new System.Windows.Forms.Label();
             this.grbElPredioEs = new System.Windows.Forms.GroupBox();
-            this.txtPagoArriendoPredio = new System.Windows.Forms.TextBox();
+            this.numPagoMensualPredio = new System.Windows.Forms.NumericUpDown();
+            this.numTiempoOcupacionPredio = new System.Windows.Forms.NumericUpDown();
             this.lblPredioArrendado = new System.Windows.Forms.Label();
             this.grbTituloDelPredio = new System.Windows.Forms.GroupBox();
             this.rdbNoTituloPredio = new System.Windows.Forms.RadioButton();
@@ -54,14 +48,13 @@
             this.lblPredioPropio = new System.Windows.Forms.Label();
             this.lblTiempoOcupacionPredio = new System.Windows.Forms.Label();
             this.lblAños = new System.Windows.Forms.Label();
-            this.txtTiempoOcupacionPredio = new System.Windows.Forms.TextBox();
             this.rdbArrendado = new System.Windows.Forms.RadioButton();
             this.rdbPredioPropio = new System.Windows.Forms.RadioButton();
             this.lbl5 = new System.Windows.Forms.Label();
             this.lblActividadDelPreio = new System.Windows.Forms.Label();
             this.grbActividadDelPredio = new System.Windows.Forms.GroupBox();
             this.rdbTurismo = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtOtroActividad = new System.Windows.Forms.TextBox();
             this.rdbOtroActividadDelPredio = new System.Windows.Forms.RadioButton();
             this.rdbPecuaria = new System.Windows.Forms.RadioButton();
             this.rdbAgricola = new System.Windows.Forms.RadioButton();
@@ -69,7 +62,7 @@
             this.lblSiembraMaterial = new System.Windows.Forms.Label();
             this.grbMaterialVegetal = new System.Windows.Forms.GroupBox();
             this.lblCompraMaterial = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaterialCertificado = new System.Windows.Forms.TextBox();
             this.rdbNoMaterialC = new System.Windows.Forms.RadioButton();
             this.rdbSiMaterialC = new System.Windows.Forms.RadioButton();
             this.lbl7 = new System.Windows.Forms.Label();
@@ -80,12 +73,25 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.grbLongitudLatitud.SuspendLayout();
+            this.numAlturaMSNM = new System.Windows.Forms.NumericUpDown();
+            this.numAreaPredio = new System.Windows.Forms.NumericUpDown();
+            this.lblLatitud = new System.Windows.Forms.Label();
+            this.lblLongitud = new System.Windows.Forms.Label();
+            this.numLatitud = new System.Windows.Forms.NumericUpDown();
+            this.numLongitud = new System.Windows.Forms.NumericUpDown();
+            this.lblAreaPredioM2 = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.grbElPredioEs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPagoMensualPredio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoOcupacionPredio)).BeginInit();
             this.grbTituloDelPredio.SuspendLayout();
             this.grbActividadDelPredio.SuspendLayout();
             this.grbMaterialVegetal.SuspendLayout();
             this.grbAnalisisDeSuelo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlturaMSNM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAreaPredio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLatitud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLongitud)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloComponenteProductivo
@@ -118,58 +124,6 @@
             this.lblUbicacionPredio.TabIndex = 20;
             this.lblUbicacionPredio.Text = "Ubicación del predio y/o de la vivienda:";
             // 
-            // grbLongitudLatitud
-            // 
-            this.grbLongitudLatitud.Controls.Add(this.lblLongitud);
-            this.grbLongitudLatitud.Controls.Add(this.txtLongitud);
-            this.grbLongitudLatitud.Controls.Add(this.lblLatitud);
-            this.grbLongitudLatitud.Controls.Add(this.txtLatitud);
-            this.grbLongitudLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbLongitudLatitud.Location = new System.Drawing.Point(475, 118);
-            this.grbLongitudLatitud.Name = "grbLongitudLatitud";
-            this.grbLongitudLatitud.Size = new System.Drawing.Size(399, 57);
-            this.grbLongitudLatitud.TabIndex = 38;
-            this.grbLongitudLatitud.TabStop = false;
-            this.grbLongitudLatitud.Text = "Tiempo en la organización";
-            // 
-            // lblLongitud
-            // 
-            this.lblLongitud.AutoSize = true;
-            this.lblLongitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLongitud.Location = new System.Drawing.Point(195, 26);
-            this.lblLongitud.Name = "lblLongitud";
-            this.lblLongitud.Size = new System.Drawing.Size(78, 21);
-            this.lblLongitud.TabIndex = 41;
-            this.lblLongitud.Text = "Longitud";
-            // 
-            // txtLongitud
-            // 
-            this.txtLongitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLongitud.Location = new System.Drawing.Point(279, 23);
-            this.txtLongitud.Name = "txtLongitud";
-            this.txtLongitud.Size = new System.Drawing.Size(101, 28);
-            this.txtLongitud.TabIndex = 40;
-            this.txtLongitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lblLatitud
-            // 
-            this.lblLatitud.AutoSize = true;
-            this.lblLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLatitud.Location = new System.Drawing.Point(6, 26);
-            this.lblLatitud.Name = "lblLatitud";
-            this.lblLatitud.Size = new System.Drawing.Size(63, 21);
-            this.lblLatitud.TabIndex = 39;
-            this.lblLatitud.Text = "Latitud";
-            // 
-            // txtLatitud
-            // 
-            this.txtLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLatitud.Location = new System.Drawing.Point(75, 23);
-            this.txtLatitud.Name = "txtLatitud";
-            this.txtLatitud.Size = new System.Drawing.Size(101, 28);
-            this.txtLatitud.TabIndex = 33;
-            this.txtLatitud.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
@@ -189,15 +143,6 @@
             this.lblAlturaSobreNivelDelMar.Size = new System.Drawing.Size(228, 21);
             this.lblAlturaSobreNivelDelMar.TabIndex = 40;
             this.lblAlturaSobreNivelDelMar.Text = "Altura sobre el nivel del mar:";
-            // 
-            // txtAlturaSobreNivelDelMar
-            // 
-            this.txtAlturaSobreNivelDelMar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlturaSobreNivelDelMar.Location = new System.Drawing.Point(393, 186);
-            this.txtAlturaSobreNivelDelMar.Name = "txtAlturaSobreNivelDelMar";
-            this.txtAlturaSobreNivelDelMar.Size = new System.Drawing.Size(112, 28);
-            this.txtAlturaSobreNivelDelMar.TabIndex = 42;
-            this.txtAlturaSobreNivelDelMar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblMSNM
             // 
@@ -229,14 +174,6 @@
             this.lblAreaPredio.TabIndex = 45;
             this.lblAreaPredio.Text = "Área del predio:";
             // 
-            // txtAreaPredio
-            // 
-            this.txtAreaPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAreaPredio.Location = new System.Drawing.Point(296, 231);
-            this.txtAreaPredio.Name = "txtAreaPredio";
-            this.txtAreaPredio.Size = new System.Drawing.Size(112, 28);
-            this.txtAreaPredio.TabIndex = 46;
-            // 
             // lbl4
             // 
             this.lbl4.AutoSize = true;
@@ -259,13 +196,13 @@
             // 
             // grbElPredioEs
             // 
-            this.grbElPredioEs.Controls.Add(this.txtPagoArriendoPredio);
+            this.grbElPredioEs.Controls.Add(this.numPagoMensualPredio);
+            this.grbElPredioEs.Controls.Add(this.numTiempoOcupacionPredio);
             this.grbElPredioEs.Controls.Add(this.lblPredioArrendado);
             this.grbElPredioEs.Controls.Add(this.grbTituloDelPredio);
             this.grbElPredioEs.Controls.Add(this.lblPredioPropio);
             this.grbElPredioEs.Controls.Add(this.lblTiempoOcupacionPredio);
             this.grbElPredioEs.Controls.Add(this.lblAños);
-            this.grbElPredioEs.Controls.Add(this.txtTiempoOcupacionPredio);
             this.grbElPredioEs.Controls.Add(this.rdbArrendado);
             this.grbElPredioEs.Controls.Add(this.rdbPredioPropio);
             this.grbElPredioEs.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,16 +211,26 @@
             this.grbElPredioEs.Size = new System.Drawing.Size(507, 203);
             this.grbElPredioEs.TabIndex = 49;
             this.grbElPredioEs.TabStop = false;
-            this.grbElPredioEs.Text = "Predio";
             // 
-            // txtPagoArriendoPredio
+            // numPagoMensualPredio
             // 
-            this.txtPagoArriendoPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoArriendoPredio.Location = new System.Drawing.Point(326, 160);
-            this.txtPagoArriendoPredio.Name = "txtPagoArriendoPredio";
-            this.txtPagoArriendoPredio.Size = new System.Drawing.Size(138, 28);
-            this.txtPagoArriendoPredio.TabIndex = 54;
-            this.txtPagoArriendoPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numPagoMensualPredio.Enabled = false;
+            this.numPagoMensualPredio.Location = new System.Drawing.Point(326, 160);
+            this.numPagoMensualPredio.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.numPagoMensualPredio.Name = "numPagoMensualPredio";
+            this.numPagoMensualPredio.Size = new System.Drawing.Size(159, 28);
+            this.numPagoMensualPredio.TabIndex = 56;
+            // 
+            // numTiempoOcupacionPredio
+            // 
+            this.numTiempoOcupacionPredio.Location = new System.Drawing.Point(267, 52);
+            this.numTiempoOcupacionPredio.Name = "numTiempoOcupacionPredio";
+            this.numTiempoOcupacionPredio.Size = new System.Drawing.Size(83, 28);
+            this.numTiempoOcupacionPredio.TabIndex = 55;
             // 
             // lblPredioArrendado
             // 
@@ -361,15 +308,6 @@
             this.lblAños.TabIndex = 38;
             this.lblAños.Text = "(Años)";
             // 
-            // txtTiempoOcupacionPredio
-            // 
-            this.txtTiempoOcupacionPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoOcupacionPredio.Location = new System.Drawing.Point(273, 52);
-            this.txtTiempoOcupacionPredio.Name = "txtTiempoOcupacionPredio";
-            this.txtTiempoOcupacionPredio.Size = new System.Drawing.Size(77, 28);
-            this.txtTiempoOcupacionPredio.TabIndex = 32;
-            this.txtTiempoOcupacionPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // rdbArrendado
             // 
             this.rdbArrendado.AutoSize = true;
@@ -381,6 +319,7 @@
             this.rdbArrendado.TabStop = true;
             this.rdbArrendado.Text = "Arrendado";
             this.rdbArrendado.UseVisualStyleBackColor = true;
+            this.rdbArrendado.CheckedChanged += new System.EventHandler(this.rdbArrendado_CheckedChanged);
             // 
             // rdbPredioPropio
             // 
@@ -393,6 +332,7 @@
             this.rdbPredioPropio.TabStop = true;
             this.rdbPredioPropio.Text = "Propio";
             this.rdbPredioPropio.UseVisualStyleBackColor = true;
+            this.rdbPredioPropio.CheckedChanged += new System.EventHandler(this.rdbPredioPropio_CheckedChanged);
             // 
             // lbl5
             // 
@@ -417,7 +357,7 @@
             // grbActividadDelPredio
             // 
             this.grbActividadDelPredio.Controls.Add(this.rdbTurismo);
-            this.grbActividadDelPredio.Controls.Add(this.textBox2);
+            this.grbActividadDelPredio.Controls.Add(this.txtOtroActividad);
             this.grbActividadDelPredio.Controls.Add(this.rdbOtroActividadDelPredio);
             this.grbActividadDelPredio.Controls.Add(this.rdbPecuaria);
             this.grbActividadDelPredio.Controls.Add(this.rdbAgricola);
@@ -427,7 +367,6 @@
             this.grbActividadDelPredio.Size = new System.Drawing.Size(289, 95);
             this.grbActividadDelPredio.TabIndex = 52;
             this.grbActividadDelPredio.TabStop = false;
-            this.grbActividadDelPredio.Text = "Actividad del predio";
             // 
             // rdbTurismo
             // 
@@ -440,14 +379,16 @@
             this.rdbTurismo.TabStop = true;
             this.rdbTurismo.Text = "Turismo";
             this.rdbTurismo.UseVisualStyleBackColor = true;
+            this.rdbTurismo.CheckedChanged += new System.EventHandler(this.rdbTurismo_CheckedChanged);
             // 
-            // textBox2
+            // txtOtroActividad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(130, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 28);
-            this.textBox2.TabIndex = 32;
+            this.txtOtroActividad.Enabled = false;
+            this.txtOtroActividad.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOtroActividad.Location = new System.Drawing.Point(130, 57);
+            this.txtOtroActividad.Name = "txtOtroActividad";
+            this.txtOtroActividad.Size = new System.Drawing.Size(143, 28);
+            this.txtOtroActividad.TabIndex = 32;
             // 
             // rdbOtroActividadDelPredio
             // 
@@ -460,6 +401,7 @@
             this.rdbOtroActividadDelPredio.TabStop = true;
             this.rdbOtroActividadDelPredio.Text = "Otra ¿Cuál?";
             this.rdbOtroActividadDelPredio.UseVisualStyleBackColor = true;
+            this.rdbOtroActividadDelPredio.CheckedChanged += new System.EventHandler(this.rdbOtroActividadDelPredio_CheckedChanged);
             // 
             // rdbPecuaria
             // 
@@ -472,6 +414,7 @@
             this.rdbPecuaria.TabStop = true;
             this.rdbPecuaria.Text = "Pecuaria";
             this.rdbPecuaria.UseVisualStyleBackColor = true;
+            this.rdbPecuaria.CheckedChanged += new System.EventHandler(this.rdbPecuaria_CheckedChanged);
             // 
             // rdbAgricola
             // 
@@ -484,6 +427,7 @@
             this.rdbAgricola.TabStop = true;
             this.rdbAgricola.Text = "Agrícola";
             this.rdbAgricola.UseVisualStyleBackColor = true;
+            this.rdbAgricola.CheckedChanged += new System.EventHandler(this.rdbAgricola_CheckedChanged);
             // 
             // lbl6
             // 
@@ -508,7 +452,7 @@
             // grbMaterialVegetal
             // 
             this.grbMaterialVegetal.Controls.Add(this.lblCompraMaterial);
-            this.grbMaterialVegetal.Controls.Add(this.textBox1);
+            this.grbMaterialVegetal.Controls.Add(this.txtMaterialCertificado);
             this.grbMaterialVegetal.Controls.Add(this.rdbNoMaterialC);
             this.grbMaterialVegetal.Controls.Add(this.rdbSiMaterialC);
             this.grbMaterialVegetal.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -517,7 +461,6 @@
             this.grbMaterialVegetal.Size = new System.Drawing.Size(642, 93);
             this.grbMaterialVegetal.TabIndex = 53;
             this.grbMaterialVegetal.TabStop = false;
-            this.grbMaterialVegetal.Text = "Material certificado";
             // 
             // lblCompraMaterial
             // 
@@ -527,15 +470,16 @@
             this.lblCompraMaterial.Name = "lblCompraMaterial";
             this.lblCompraMaterial.Size = new System.Drawing.Size(471, 21);
             this.lblCompraMaterial.TabIndex = 55;
-            this.lblCompraMaterial.Text = "Si compra material vegetal certificado, ¿para cuales cultivos?";
+            this.lblCompraMaterial.Text = "Si compra material vegetal certificado, ¿Para cuáles cultivos?";
             // 
-            // textBox1
+            // txtMaterialCertificado
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(488, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 28);
-            this.textBox1.TabIndex = 32;
+            this.txtMaterialCertificado.Enabled = false;
+            this.txtMaterialCertificado.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaterialCertificado.Location = new System.Drawing.Point(488, 52);
+            this.txtMaterialCertificado.Name = "txtMaterialCertificado";
+            this.txtMaterialCertificado.Size = new System.Drawing.Size(143, 28);
+            this.txtMaterialCertificado.TabIndex = 32;
             // 
             // rdbNoMaterialC
             // 
@@ -548,6 +492,7 @@
             this.rdbNoMaterialC.TabStop = true;
             this.rdbNoMaterialC.Text = "No";
             this.rdbNoMaterialC.UseVisualStyleBackColor = true;
+            this.rdbNoMaterialC.CheckedChanged += new System.EventHandler(this.rdbNoMaterialC_CheckedChanged);
             // 
             // rdbSiMaterialC
             // 
@@ -560,6 +505,7 @@
             this.rdbSiMaterialC.TabStop = true;
             this.rdbSiMaterialC.Text = "Si";
             this.rdbSiMaterialC.UseVisualStyleBackColor = true;
+            this.rdbSiMaterialC.CheckedChanged += new System.EventHandler(this.rdbSiMaterialC_CheckedChanged);
             // 
             // lbl7
             // 
@@ -622,9 +568,9 @@
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir.Location = new System.Drawing.Point(784, 889);
+            this.btnSalir.Location = new System.Drawing.Point(702, 801);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(118, 37);
+            this.btnSalir.Size = new System.Drawing.Size(145, 56);
             this.btnSalir.TabIndex = 59;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -634,18 +580,19 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.LawnGreen;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(501, 833);
+            this.btnSiguiente.Location = new System.Drawing.Point(502, 801);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(145, 56);
             this.btnSiguiente.TabIndex = 58;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.Coral;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(292, 833);
+            this.btnRegresar.Location = new System.Drawing.Point(301, 801);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(145, 56);
             this.btnRegresar.TabIndex = 57;
@@ -653,12 +600,120 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // numAlturaMSNM
+            // 
+            this.numAlturaMSNM.Location = new System.Drawing.Point(386, 190);
+            this.numAlturaMSNM.Maximum = new decimal(new int[] {
+            6000,
+            0,
+            0,
+            0});
+            this.numAlturaMSNM.Name = "numAlturaMSNM";
+            this.numAlturaMSNM.Size = new System.Drawing.Size(120, 20);
+            this.numAlturaMSNM.TabIndex = 60;
+            // 
+            // numAreaPredio
+            // 
+            this.numAreaPredio.Location = new System.Drawing.Point(296, 235);
+            this.numAreaPredio.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numAreaPredio.Name = "numAreaPredio";
+            this.numAreaPredio.Size = new System.Drawing.Size(120, 20);
+            this.numAreaPredio.TabIndex = 61;
+            // 
+            // lblLatitud
+            // 
+            this.lblLatitud.AutoSize = true;
+            this.lblLatitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLatitud.Location = new System.Drawing.Point(475, 141);
+            this.lblLatitud.Name = "lblLatitud";
+            this.lblLatitud.Size = new System.Drawing.Size(63, 21);
+            this.lblLatitud.TabIndex = 39;
+            this.lblLatitud.Text = "Latitud";
+            // 
+            // lblLongitud
+            // 
+            this.lblLongitud.AutoSize = true;
+            this.lblLongitud.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLongitud.Location = new System.Drawing.Point(674, 140);
+            this.lblLongitud.Name = "lblLongitud";
+            this.lblLongitud.Size = new System.Drawing.Size(78, 21);
+            this.lblLongitud.TabIndex = 41;
+            this.lblLongitud.Text = "Longitud";
+            // 
+            // numLatitud
+            // 
+            this.numLatitud.Location = new System.Drawing.Point(540, 142);
+            this.numLatitud.Maximum = new decimal(new int[] {
+            90,
+            0,
+            0,
+            0});
+            this.numLatitud.Minimum = new decimal(new int[] {
+            90,
+            0,
+            0,
+            -2147483648});
+            this.numLatitud.Name = "numLatitud";
+            this.numLatitud.Size = new System.Drawing.Size(114, 20);
+            this.numLatitud.TabIndex = 60;
+            // 
+            // numLongitud
+            // 
+            this.numLongitud.Location = new System.Drawing.Point(758, 141);
+            this.numLongitud.Maximum = new decimal(new int[] {
+            181,
+            0,
+            0,
+            0});
+            this.numLongitud.Minimum = new decimal(new int[] {
+            181,
+            0,
+            0,
+            -2147483648});
+            this.numLongitud.Name = "numLongitud";
+            this.numLongitud.Size = new System.Drawing.Size(114, 20);
+            this.numLongitud.TabIndex = 61;
+            // 
+            // lblAreaPredioM2
+            // 
+            this.lblAreaPredioM2.AutoSize = true;
+            this.lblAreaPredioM2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAreaPredioM2.Location = new System.Drawing.Point(422, 234);
+            this.lblAreaPredioM2.Name = "lblAreaPredioM2";
+            this.lblAreaPredioM2.Size = new System.Drawing.Size(148, 21);
+            this.lblAreaPredioM2.TabIndex = 62;
+            this.lblAreaPredioM2.Text = "Metros cuadrados";
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Thistle;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(99, 801);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(145, 56);
+            this.btnMenu.TabIndex = 63;
+            this.btnMenu.Text = "Menú";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // ComponenteProductivoP1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 938);
+            this.ClientSize = new System.Drawing.Size(914, 897);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.lblAreaPredioM2);
+            this.Controls.Add(this.numLongitud);
+            this.Controls.Add(this.numAreaPredio);
+            this.Controls.Add(this.lblLongitud);
+            this.Controls.Add(this.numLatitud);
+            this.Controls.Add(this.numAlturaMSNM);
             this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.lblLatitud);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.grbAnalisisDeSuelo);
@@ -673,23 +728,20 @@
             this.Controls.Add(this.grbElPredioEs);
             this.Controls.Add(this.lblElPredioEs);
             this.Controls.Add(this.lbl4);
-            this.Controls.Add(this.txtAreaPredio);
             this.Controls.Add(this.lblAreaPredio);
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lblMSNM);
-            this.Controls.Add(this.txtAlturaSobreNivelDelMar);
             this.Controls.Add(this.lblAlturaSobreNivelDelMar);
             this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.grbLongitudLatitud);
             this.Controls.Add(this.lblUbicacionPredio);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.TituloComponenteProductivo);
             this.Name = "ComponenteProductivoP1";
             this.Text = "ComponenteProductivo";
-            this.grbLongitudLatitud.ResumeLayout(false);
-            this.grbLongitudLatitud.PerformLayout();
             this.grbElPredioEs.ResumeLayout(false);
             this.grbElPredioEs.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPagoMensualPredio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoOcupacionPredio)).EndInit();
             this.grbTituloDelPredio.ResumeLayout(false);
             this.grbTituloDelPredio.PerformLayout();
             this.grbActividadDelPredio.ResumeLayout(false);
@@ -698,6 +750,10 @@
             this.grbMaterialVegetal.PerformLayout();
             this.grbAnalisisDeSuelo.ResumeLayout(false);
             this.grbAnalisisDeSuelo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAlturaMSNM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAreaPredio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLatitud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLongitud)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -708,23 +764,15 @@
         private System.Windows.Forms.Label TituloComponenteProductivo;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblUbicacionPredio;
-        private System.Windows.Forms.GroupBox grbLongitudLatitud;
-        private System.Windows.Forms.TextBox txtLatitud;
-        private System.Windows.Forms.Label lblLatitud;
-        private System.Windows.Forms.Label lblLongitud;
-        private System.Windows.Forms.TextBox txtLongitud;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lblAlturaSobreNivelDelMar;
-        private System.Windows.Forms.TextBox txtAlturaSobreNivelDelMar;
         private System.Windows.Forms.Label lblMSNM;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lblAreaPredio;
-        private System.Windows.Forms.TextBox txtAreaPredio;
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.Label lblElPredioEs;
         private System.Windows.Forms.GroupBox grbElPredioEs;
         private System.Windows.Forms.Label lblAños;
-        private System.Windows.Forms.TextBox txtTiempoOcupacionPredio;
         private System.Windows.Forms.RadioButton rdbArrendado;
         private System.Windows.Forms.RadioButton rdbPredioPropio;
         private System.Windows.Forms.Label lblTiempoOcupacionPredio;
@@ -732,12 +780,11 @@
         private System.Windows.Forms.GroupBox grbTituloDelPredio;
         private System.Windows.Forms.RadioButton rdbNoTituloPredio;
         private System.Windows.Forms.RadioButton rdbSiTituloPredio;
-        private System.Windows.Forms.TextBox txtPagoArriendoPredio;
         private System.Windows.Forms.Label lblPredioArrendado;
         private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.Label lblActividadDelPreio;
         private System.Windows.Forms.GroupBox grbActividadDelPredio;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtOtroActividad;
         private System.Windows.Forms.RadioButton rdbOtroActividadDelPredio;
         private System.Windows.Forms.RadioButton rdbPecuaria;
         private System.Windows.Forms.RadioButton rdbAgricola;
@@ -745,7 +792,7 @@
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.Label lblSiembraMaterial;
         private System.Windows.Forms.GroupBox grbMaterialVegetal;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaterialCertificado;
         private System.Windows.Forms.RadioButton rdbNoMaterialC;
         private System.Windows.Forms.RadioButton rdbSiMaterialC;
         private System.Windows.Forms.Label lblCompraMaterial;
@@ -757,5 +804,15 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.NumericUpDown numAlturaMSNM;
+        private System.Windows.Forms.NumericUpDown numAreaPredio;
+        private System.Windows.Forms.Label lblLatitud;
+        private System.Windows.Forms.Label lblLongitud;
+        private System.Windows.Forms.NumericUpDown numLatitud;
+        private System.Windows.Forms.NumericUpDown numLongitud;
+        private System.Windows.Forms.Label lblAreaPredioM2;
+        private System.Windows.Forms.NumericUpDown numTiempoOcupacionPredio;
+        private System.Windows.Forms.NumericUpDown numPagoMensualPredio;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

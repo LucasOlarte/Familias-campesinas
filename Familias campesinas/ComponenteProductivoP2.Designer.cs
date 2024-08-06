@@ -39,9 +39,8 @@
             this.lbl9 = new System.Windows.Forms.Label();
             this.lblManejoControlPlagas = new System.Windows.Forms.Label();
             this.grbControlDePlagas = new System.Windows.Forms.GroupBox();
-            this.grbTituloDelPredio = new System.Windows.Forms.GroupBox();
+            this.grbMetodoDeControl = new System.Windows.Forms.GroupBox();
             this.txtOtroControlDePlagas = new System.Windows.Forms.TextBox();
-            this.lblOtroControlDePlagas = new System.Windows.Forms.Label();
             this.rdbControlFisico = new System.Windows.Forms.RadioButton();
             this.rdbControlBiologico = new System.Windows.Forms.RadioButton();
             this.rdbControlOrganico = new System.Windows.Forms.RadioButton();
@@ -52,9 +51,11 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.rdbOtroMetodoControl = new System.Windows.Forms.RadioButton();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.grbBuenasPracticas.SuspendLayout();
             this.grbControlDePlagas.SuspendLayout();
-            this.grbTituloDelPredio.SuspendLayout();
+            this.grbMetodoDeControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbBuenasPracticas
@@ -69,10 +70,10 @@
             this.grbBuenasPracticas.Size = new System.Drawing.Size(595, 64);
             this.grbBuenasPracticas.TabIndex = 42;
             this.grbBuenasPracticas.TabStop = false;
-            this.grbBuenasPracticas.Text = "Buenas Prácticas Agrícolas";
             // 
             // txtCultivosBPA
             // 
+            this.txtCultivosBPA.Enabled = false;
             this.txtCultivosBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCultivosBPA.Location = new System.Drawing.Point(418, 25);
             this.txtCultivosBPA.Name = "txtCultivosBPA";
@@ -85,9 +86,9 @@
             this.lblImplementaBPA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImplementaBPA.Location = new System.Drawing.Point(110, 28);
             this.lblImplementaBPA.Name = "lblImplementaBPA";
-            this.lblImplementaBPA.Size = new System.Drawing.Size(302, 21);
+            this.lblImplementaBPA.Size = new System.Drawing.Size(298, 21);
             this.lblImplementaBPA.TabIndex = 55;
-            this.lblImplementaBPA.Text = "Si las implementa ¿En cuáles cultivos?:";
+            this.lblImplementaBPA.Text = "Si las implementa ¿En cuáles cultivos?";
             // 
             // rdbNoBPA
             // 
@@ -100,6 +101,7 @@
             this.rdbNoBPA.TabStop = true;
             this.rdbNoBPA.Text = "No";
             this.rdbNoBPA.UseVisualStyleBackColor = true;
+            this.rdbNoBPA.CheckedChanged += new System.EventHandler(this.rdbNoBPA_CheckedChanged);
             // 
             // rdbSiBPA
             // 
@@ -112,6 +114,7 @@
             this.rdbSiBPA.TabStop = true;
             this.rdbSiBPA.Text = "Si";
             this.rdbSiBPA.UseVisualStyleBackColor = true;
+            this.rdbSiBPA.CheckedChanged += new System.EventHandler(this.rdbSiBPA_CheckedChanged);
             // 
             // lblBuenasPracticas
             // 
@@ -165,51 +168,40 @@
             // 
             // grbControlDePlagas
             // 
-            this.grbControlDePlagas.Controls.Add(this.grbTituloDelPredio);
+            this.grbControlDePlagas.Controls.Add(this.grbMetodoDeControl);
             this.grbControlDePlagas.Controls.Add(this.lblControlDePlagas);
             this.grbControlDePlagas.Controls.Add(this.rdbNoControlDePlagas);
             this.grbControlDePlagas.Controls.Add(this.rdbSiControlDePlagas);
             this.grbControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbControlDePlagas.Location = new System.Drawing.Point(163, 271);
             this.grbControlDePlagas.Name = "grbControlDePlagas";
-            this.grbControlDePlagas.Size = new System.Drawing.Size(507, 183);
+            this.grbControlDePlagas.Size = new System.Drawing.Size(571, 183);
             this.grbControlDePlagas.TabIndex = 50;
             this.grbControlDePlagas.TabStop = false;
-            this.grbControlDePlagas.Text = "Manejo y control de plagas y enfermedades";
             // 
-            // grbTituloDelPredio
+            // grbMetodoDeControl
             // 
-            this.grbTituloDelPredio.Controls.Add(this.txtOtroControlDePlagas);
-            this.grbTituloDelPredio.Controls.Add(this.lblOtroControlDePlagas);
-            this.grbTituloDelPredio.Controls.Add(this.rdbControlFisico);
-            this.grbTituloDelPredio.Controls.Add(this.rdbControlBiologico);
-            this.grbTituloDelPredio.Controls.Add(this.rdbControlOrganico);
-            this.grbTituloDelPredio.Controls.Add(this.rdbControlConQuimicos);
-            this.grbTituloDelPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTituloDelPredio.Location = new System.Drawing.Point(10, 79);
-            this.grbTituloDelPredio.Name = "grbTituloDelPredio";
-            this.grbTituloDelPredio.Size = new System.Drawing.Size(474, 94);
-            this.grbTituloDelPredio.TabIndex = 52;
-            this.grbTituloDelPredio.TabStop = false;
-            this.grbTituloDelPredio.Text = "Método de control";
+            this.grbMetodoDeControl.Controls.Add(this.rdbOtroMetodoControl);
+            this.grbMetodoDeControl.Controls.Add(this.txtOtroControlDePlagas);
+            this.grbMetodoDeControl.Controls.Add(this.rdbControlFisico);
+            this.grbMetodoDeControl.Controls.Add(this.rdbControlBiologico);
+            this.grbMetodoDeControl.Controls.Add(this.rdbControlOrganico);
+            this.grbMetodoDeControl.Controls.Add(this.rdbControlConQuimicos);
+            this.grbMetodoDeControl.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbMetodoDeControl.Location = new System.Drawing.Point(10, 79);
+            this.grbMetodoDeControl.Name = "grbMetodoDeControl";
+            this.grbMetodoDeControl.Size = new System.Drawing.Size(474, 94);
+            this.grbMetodoDeControl.TabIndex = 52;
+            this.grbMetodoDeControl.TabStop = false;
+            this.grbMetodoDeControl.Text = "Método de control";
             // 
             // txtOtroControlDePlagas
             // 
             this.txtOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOtroControlDePlagas.Location = new System.Drawing.Point(116, 52);
+            this.txtOtroControlDePlagas.Location = new System.Drawing.Point(144, 52);
             this.txtOtroControlDePlagas.Name = "txtOtroControlDePlagas";
             this.txtOtroControlDePlagas.Size = new System.Drawing.Size(153, 28);
             this.txtOtroControlDePlagas.TabIndex = 57;
-            // 
-            // lblOtroControlDePlagas
-            // 
-            this.lblOtroControlDePlagas.AutoSize = true;
-            this.lblOtroControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOtroControlDePlagas.Location = new System.Drawing.Point(6, 55);
-            this.lblOtroControlDePlagas.Name = "lblOtroControlDePlagas";
-            this.lblOtroControlDePlagas.Size = new System.Drawing.Size(104, 21);
-            this.lblOtroControlDePlagas.TabIndex = 53;
-            this.lblOtroControlDePlagas.Text = "Otro ¿Cuál?:";
             // 
             // rdbControlFisico
             // 
@@ -222,6 +214,7 @@
             this.rdbControlFisico.TabStop = true;
             this.rdbControlFisico.Text = "Físico";
             this.rdbControlFisico.UseVisualStyleBackColor = true;
+            this.rdbControlFisico.CheckedChanged += new System.EventHandler(this.rdbControlFisico_CheckedChanged);
             // 
             // rdbControlBiologico
             // 
@@ -234,6 +227,7 @@
             this.rdbControlBiologico.TabStop = true;
             this.rdbControlBiologico.Text = "Biológico";
             this.rdbControlBiologico.UseVisualStyleBackColor = true;
+            this.rdbControlBiologico.CheckedChanged += new System.EventHandler(this.rdbControlBiologico_CheckedChanged);
             // 
             // rdbControlOrganico
             // 
@@ -246,6 +240,7 @@
             this.rdbControlOrganico.TabStop = true;
             this.rdbControlOrganico.Text = "Orgánico";
             this.rdbControlOrganico.UseVisualStyleBackColor = true;
+            this.rdbControlOrganico.CheckedChanged += new System.EventHandler(this.rdbControlOrganico_CheckedChanged);
             // 
             // rdbControlConQuimicos
             // 
@@ -258,6 +253,7 @@
             this.rdbControlConQuimicos.TabStop = true;
             this.rdbControlConQuimicos.Text = "Con químicos";
             this.rdbControlConQuimicos.UseVisualStyleBackColor = true;
+            this.rdbControlConQuimicos.CheckedChanged += new System.EventHandler(this.rdbControlConQuimicos_CheckedChanged);
             // 
             // lblControlDePlagas
             // 
@@ -265,42 +261,44 @@
             this.lblControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblControlDePlagas.Location = new System.Drawing.Point(6, 55);
             this.lblControlDePlagas.Name = "lblControlDePlagas";
-            this.lblControlDePlagas.Size = new System.Drawing.Size(484, 21);
+            this.lblControlDePlagas.Size = new System.Drawing.Size(562, 21);
             this.lblControlDePlagas.TabIndex = 50;
-            this.lblControlDePlagas.Text = "Si realiza manejo y control de plagas y enfermedades, lo hace:";
+            this.lblControlDePlagas.Text = "Si realiza manejo y control de plagas y enfermedades ¿Con qué lo hace?";
             // 
             // rdbNoControlDePlagas
             // 
             this.rdbNoControlDePlagas.AutoSize = true;
             this.rdbNoControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNoControlDePlagas.Location = new System.Drawing.Point(57, 27);
+            this.rdbNoControlDePlagas.Location = new System.Drawing.Point(63, 27);
             this.rdbNoControlDePlagas.Name = "rdbNoControlDePlagas";
             this.rdbNoControlDePlagas.Size = new System.Drawing.Size(51, 25);
             this.rdbNoControlDePlagas.TabIndex = 21;
             this.rdbNoControlDePlagas.TabStop = true;
             this.rdbNoControlDePlagas.Text = "No";
             this.rdbNoControlDePlagas.UseVisualStyleBackColor = true;
+            this.rdbNoControlDePlagas.CheckedChanged += new System.EventHandler(this.rdbNoControlDePlagas_CheckedChanged);
             // 
             // rdbSiControlDePlagas
             // 
             this.rdbSiControlDePlagas.AutoSize = true;
             this.rdbSiControlDePlagas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSiControlDePlagas.Location = new System.Drawing.Point(10, 27);
+            this.rdbSiControlDePlagas.Location = new System.Drawing.Point(16, 27);
             this.rdbSiControlDePlagas.Name = "rdbSiControlDePlagas";
             this.rdbSiControlDePlagas.Size = new System.Drawing.Size(41, 25);
             this.rdbSiControlDePlagas.TabIndex = 20;
             this.rdbSiControlDePlagas.TabStop = true;
             this.rdbSiControlDePlagas.Text = "Si";
             this.rdbSiControlDePlagas.UseVisualStyleBackColor = true;
+            this.rdbSiControlDePlagas.CheckedChanged += new System.EventHandler(this.rdbSiControlDePlagas_CheckedChanged);
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir.Location = new System.Drawing.Point(784, 586);
+            this.btnSalir.Location = new System.Drawing.Point(688, 530);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(118, 37);
+            this.btnSalir.Size = new System.Drawing.Size(145, 56);
             this.btnSalir.TabIndex = 62;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -310,12 +308,13 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(501, 530);
+            this.btnGuardar.Location = new System.Drawing.Point(493, 530);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(145, 56);
             this.btnGuardar.TabIndex = 61;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnRegresar
             // 
@@ -329,11 +328,36 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // rdbOtroMetodoControl
+            // 
+            this.rdbOtroMetodoControl.AutoSize = true;
+            this.rdbOtroMetodoControl.Location = new System.Drawing.Point(6, 53);
+            this.rdbOtroMetodoControl.Name = "rdbOtroMetodoControl";
+            this.rdbOtroMetodoControl.Size = new System.Drawing.Size(118, 25);
+            this.rdbOtroMetodoControl.TabIndex = 58;
+            this.rdbOtroMetodoControl.TabStop = true;
+            this.rdbOtroMetodoControl.Text = "Otro ¿Cuál?";
+            this.rdbOtroMetodoControl.UseVisualStyleBackColor = true;
+            this.rdbOtroMetodoControl.CheckedChanged += new System.EventHandler(this.rdbOtroMetodoControl_CheckedChanged);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Thistle;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(99, 530);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(145, 56);
+            this.btnMenu.TabIndex = 65;
+            this.btnMenu.Text = "Menú";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // ComponenteProductivoP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 635);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnRegresar);
@@ -350,8 +374,8 @@
             this.grbBuenasPracticas.PerformLayout();
             this.grbControlDePlagas.ResumeLayout(false);
             this.grbControlDePlagas.PerformLayout();
-            this.grbTituloDelPredio.ResumeLayout(false);
-            this.grbTituloDelPredio.PerformLayout();
+            this.grbMetodoDeControl.ResumeLayout(false);
+            this.grbMetodoDeControl.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,7 +394,7 @@
         private System.Windows.Forms.Label lbl9;
         private System.Windows.Forms.Label lblManejoControlPlagas;
         private System.Windows.Forms.GroupBox grbControlDePlagas;
-        private System.Windows.Forms.GroupBox grbTituloDelPredio;
+        private System.Windows.Forms.GroupBox grbMetodoDeControl;
         private System.Windows.Forms.RadioButton rdbControlBiologico;
         private System.Windows.Forms.RadioButton rdbControlOrganico;
         private System.Windows.Forms.RadioButton rdbControlConQuimicos;
@@ -378,10 +402,11 @@
         private System.Windows.Forms.RadioButton rdbNoControlDePlagas;
         private System.Windows.Forms.RadioButton rdbSiControlDePlagas;
         private System.Windows.Forms.TextBox txtOtroControlDePlagas;
-        private System.Windows.Forms.Label lblOtroControlDePlagas;
         private System.Windows.Forms.RadioButton rdbControlFisico;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.RadioButton rdbOtroMetodoControl;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

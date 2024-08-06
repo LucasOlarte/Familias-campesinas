@@ -30,9 +30,7 @@
         {
             this.TituloInfoGeneral = new System.Windows.Forms.Label();
             this.lblMunicipio = new System.Windows.Forms.Label();
-            this.txtMunicipio = new System.Windows.Forms.TextBox();
             this.lblSubregion = new System.Windows.Forms.Label();
-            this.txtSubregion = new System.Windows.Forms.TextBox();
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtVereda = new System.Windows.Forms.TextBox();
             this.lblVereda = new System.Windows.Forms.Label();
@@ -50,7 +48,6 @@
             this.lbl4 = new System.Windows.Forms.Label();
             this.lblDistanciaCabeceraPredio = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
-            this.txtDistanciaPredio = new System.Windows.Forms.TextBox();
             this.lblKm = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lblTransporte = new System.Windows.Forms.Label();
@@ -64,7 +61,6 @@
             this.rdbAPie = new System.Windows.Forms.RadioButton();
             this.lblTiempoDesplazamiento = new System.Windows.Forms.Label();
             this.lbl7 = new System.Windows.Forms.Label();
-            this.txtTiempoTransporte = new System.Windows.Forms.TextBox();
             this.lblHoras = new System.Windows.Forms.Label();
             this.lbl8 = new System.Windows.Forms.Label();
             this.lblViaCabeceraPredio = new System.Windows.Forms.Label();
@@ -78,9 +74,16 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.cmbMunicipio = new System.Windows.Forms.ComboBox();
+            this.cmbSubregion = new System.Windows.Forms.ComboBox();
+            this.numDistanciaPredio = new System.Windows.Forms.NumericUpDown();
+            this.numTiempoTransporte = new System.Windows.Forms.NumericUpDown();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.grbPredio.SuspendLayout();
             this.grbTransporte.SuspendLayout();
             this.grbVia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDistanciaPredio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoTransporte)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloInfoGeneral
@@ -103,31 +106,15 @@
             this.lblMunicipio.TabIndex = 10;
             this.lblMunicipio.Text = "Municipio:";
             // 
-            // txtMunicipio
-            // 
-            this.txtMunicipio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMunicipio.Location = new System.Drawing.Point(264, 127);
-            this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(136, 28);
-            this.txtMunicipio.TabIndex = 11;
-            // 
             // lblSubregion
             // 
             this.lblSubregion.AutoSize = true;
             this.lblSubregion.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubregion.Location = new System.Drawing.Point(434, 130);
+            this.lblSubregion.Location = new System.Drawing.Point(411, 131);
             this.lblSubregion.Name = "lblSubregion";
             this.lblSubregion.Size = new System.Drawing.Size(92, 21);
             this.lblSubregion.TabIndex = 12;
             this.lblSubregion.Text = "Subregión:";
-            // 
-            // txtSubregion
-            // 
-            this.txtSubregion.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubregion.Location = new System.Drawing.Point(532, 127);
-            this.txtSubregion.Name = "txtSubregion";
-            this.txtSubregion.Size = new System.Drawing.Size(136, 28);
-            this.txtSubregion.TabIndex = 13;
             // 
             // lbl1
             // 
@@ -142,9 +129,9 @@
             // txtVereda
             // 
             this.txtVereda.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVereda.Location = new System.Drawing.Point(242, 190);
+            this.txtVereda.Location = new System.Drawing.Point(265, 184);
             this.txtVereda.Name = "txtVereda";
-            this.txtVereda.Size = new System.Drawing.Size(136, 28);
+            this.txtVereda.Size = new System.Drawing.Size(127, 28);
             this.txtVereda.TabIndex = 16;
             // 
             // lblVereda
@@ -193,9 +180,9 @@
             this.rdbPropio.Name = "rdbPropio";
             this.rdbPropio.Size = new System.Drawing.Size(78, 25);
             this.rdbPropio.TabIndex = 20;
-            this.rdbPropio.TabStop = true;
             this.rdbPropio.Text = "Propio";
             this.rdbPropio.UseVisualStyleBackColor = true;
+            this.rdbPropio.CheckedChanged += new System.EventHandler(this.rdbPropio_CheckedChanged);
             // 
             // grbPredio
             // 
@@ -207,17 +194,20 @@
             this.grbPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPredio.Location = new System.Drawing.Point(276, 270);
             this.grbPredio.Name = "grbPredio";
-            this.grbPredio.Size = new System.Drawing.Size(405, 92);
+            this.grbPredio.Size = new System.Drawing.Size(483, 92);
             this.grbPredio.TabIndex = 21;
             this.grbPredio.TabStop = false;
             this.grbPredio.Text = "Predio";
+            this.grbPredio.Enter += new System.EventHandler(this.grbPredio_Enter);
             // 
             // txtPredioOtro
             // 
+            this.txtPredioOtro.Enabled = false;
             this.txtPredioOtro.Location = new System.Drawing.Point(262, 57);
             this.txtPredioOtro.Name = "txtPredioOtro";
             this.txtPredioOtro.Size = new System.Drawing.Size(130, 28);
             this.txtPredioOtro.TabIndex = 24;
+            this.txtPredioOtro.TextChanged += new System.EventHandler(this.txtPredioOtro_TextChanged);
             // 
             // rdbPredioOtro
             // 
@@ -227,9 +217,9 @@
             this.rdbPredioOtro.Name = "rdbPredioOtro";
             this.rdbPredioOtro.Size = new System.Drawing.Size(118, 25);
             this.rdbPredioOtro.TabIndex = 23;
-            this.rdbPredioOtro.TabStop = true;
             this.rdbPredioOtro.Text = "Otro ¿Cuál?";
             this.rdbPredioOtro.UseVisualStyleBackColor = true;
+            this.rdbPredioOtro.CheckedChanged += new System.EventHandler(this.rdbPredioOtro_CheckedChanged);
             // 
             // rdbArrendado
             // 
@@ -239,21 +229,21 @@
             this.rdbArrendado.Name = "rdbArrendado";
             this.rdbArrendado.Size = new System.Drawing.Size(109, 25);
             this.rdbArrendado.TabIndex = 22;
-            this.rdbArrendado.TabStop = true;
             this.rdbArrendado.Text = "Arrendado";
             this.rdbArrendado.UseVisualStyleBackColor = true;
+            this.rdbArrendado.CheckedChanged += new System.EventHandler(this.rdbArrendado_CheckedChanged);
             // 
             // rdbCompraVenta
             // 
             this.rdbCompraVenta.AutoSize = true;
             this.rdbCompraVenta.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCompraVenta.Location = new System.Drawing.Point(114, 27);
+            this.rdbCompraVenta.Location = new System.Drawing.Point(144, 26);
             this.rdbCompraVenta.Name = "rdbCompraVenta";
             this.rdbCompraVenta.Size = new System.Drawing.Size(136, 25);
             this.rdbCompraVenta.TabIndex = 21;
-            this.rdbCompraVenta.TabStop = true;
             this.rdbCompraVenta.Text = "Compra venta";
             this.rdbCompraVenta.UseVisualStyleBackColor = true;
+            this.rdbCompraVenta.CheckedChanged += new System.EventHandler(this.rdbCompraVenta_CheckedChanged);
             // 
             // lbl2
             // 
@@ -305,15 +295,6 @@
             this.lbl5.TabIndex = 26;
             this.lbl5.Text = "5.";
             // 
-            // txtDistanciaPredio
-            // 
-            this.txtDistanciaPredio.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDistanciaPredio.Location = new System.Drawing.Point(620, 381);
-            this.txtDistanciaPredio.Name = "txtDistanciaPredio";
-            this.txtDistanciaPredio.Size = new System.Drawing.Size(117, 28);
-            this.txtDistanciaPredio.TabIndex = 25;
-            this.txtDistanciaPredio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblKm
             // 
             this.lblKm.AutoSize = true;
@@ -354,9 +335,9 @@
             this.grbTransporte.Controls.Add(this.rdbBestia);
             this.grbTransporte.Controls.Add(this.rdbAPie);
             this.grbTransporte.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTransporte.Location = new System.Drawing.Point(172, 466);
+            this.grbTransporte.Location = new System.Drawing.Point(276, 466);
             this.grbTransporte.Name = "grbTransporte";
-            this.grbTransporte.Size = new System.Drawing.Size(422, 90);
+            this.grbTransporte.Size = new System.Drawing.Size(483, 90);
             this.grbTransporte.TabIndex = 25;
             this.grbTransporte.TabStop = false;
             this.grbTransporte.Text = "Transporte";
@@ -372,6 +353,7 @@
             this.rdbCarro.TabStop = true;
             this.rdbCarro.Text = "Carro";
             this.rdbCarro.UseVisualStyleBackColor = true;
+            this.rdbCarro.CheckedChanged += new System.EventHandler(this.rdbCarro_CheckedChanged);
             // 
             // rdbMoto
             // 
@@ -384,9 +366,11 @@
             this.rdbMoto.TabStop = true;
             this.rdbMoto.Text = "Moto";
             this.rdbMoto.UseVisualStyleBackColor = true;
+            this.rdbMoto.CheckedChanged += new System.EventHandler(this.rdbMoto_CheckedChanged);
             // 
             // txtTransporteOtro
             // 
+            this.txtTransporteOtro.Enabled = false;
             this.txtTransporteOtro.Location = new System.Drawing.Point(144, 55);
             this.txtTransporteOtro.Name = "txtTransporteOtro";
             this.txtTransporteOtro.Size = new System.Drawing.Size(130, 28);
@@ -403,6 +387,7 @@
             this.rdbTransporteOtro.TabStop = true;
             this.rdbTransporteOtro.Text = "Otro ¿Cuál?";
             this.rdbTransporteOtro.UseVisualStyleBackColor = true;
+            this.rdbTransporteOtro.CheckedChanged += new System.EventHandler(this.rdbTransporteOtro_CheckedChanged);
             // 
             // rdbBicicleta
             // 
@@ -415,6 +400,7 @@
             this.rdbBicicleta.TabStop = true;
             this.rdbBicicleta.Text = "Bicicleta";
             this.rdbBicicleta.UseVisualStyleBackColor = true;
+            this.rdbBicicleta.CheckedChanged += new System.EventHandler(this.rdbBicicleta_CheckedChanged);
             // 
             // rdbBestia
             // 
@@ -427,6 +413,7 @@
             this.rdbBestia.TabStop = true;
             this.rdbBestia.Text = "Bestia";
             this.rdbBestia.UseVisualStyleBackColor = true;
+            this.rdbBestia.CheckedChanged += new System.EventHandler(this.rdbBestia_CheckedChanged);
             // 
             // rdbAPie
             // 
@@ -439,6 +426,7 @@
             this.rdbAPie.TabStop = true;
             this.rdbAPie.Text = "A pie";
             this.rdbAPie.UseVisualStyleBackColor = true;
+            this.rdbAPie.CheckedChanged += new System.EventHandler(this.rdbAPie_CheckedChanged);
             // 
             // lblTiempoDesplazamiento
             // 
@@ -461,20 +449,11 @@
             this.lbl7.TabIndex = 31;
             this.lbl7.Text = "7.";
             // 
-            // txtTiempoTransporte
-            // 
-            this.txtTiempoTransporte.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoTransporte.Location = new System.Drawing.Point(172, 596);
-            this.txtTiempoTransporte.Name = "txtTiempoTransporte";
-            this.txtTiempoTransporte.Size = new System.Drawing.Size(117, 28);
-            this.txtTiempoTransporte.TabIndex = 32;
-            this.txtTiempoTransporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblHoras
             // 
             this.lblHoras.AutoSize = true;
             this.lblHoras.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoras.Location = new System.Drawing.Point(293, 599);
+            this.lblHoras.Location = new System.Drawing.Point(302, 599);
             this.lblHoras.Name = "lblHoras";
             this.lblHoras.Size = new System.Drawing.Size(64, 21);
             this.lblHoras.TabIndex = 33;
@@ -509,9 +488,9 @@
             this.grbVia.Controls.Add(this.rdbPavimentada);
             this.grbVia.Controls.Add(this.rdbDestapada);
             this.grbVia.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbVia.Location = new System.Drawing.Point(172, 677);
+            this.grbVia.Location = new System.Drawing.Point(276, 677);
             this.grbVia.Name = "grbVia";
-            this.grbVia.Size = new System.Drawing.Size(616, 95);
+            this.grbVia.Size = new System.Drawing.Size(483, 95);
             this.grbVia.TabIndex = 27;
             this.grbVia.TabStop = false;
             this.grbVia.Text = "Vía";
@@ -527,9 +506,11 @@
             this.rdbEmpedrada.TabStop = true;
             this.rdbEmpedrada.Text = "Empedrada";
             this.rdbEmpedrada.UseVisualStyleBackColor = true;
+            this.rdbEmpedrada.CheckedChanged += new System.EventHandler(this.rdbEmpedrada_CheckedChanged);
             // 
             // txtViaOtro
             // 
+            this.txtViaOtro.Enabled = false;
             this.txtViaOtro.Location = new System.Drawing.Point(144, 55);
             this.txtViaOtro.Name = "txtViaOtro";
             this.txtViaOtro.Size = new System.Drawing.Size(130, 28);
@@ -546,6 +527,7 @@
             this.rdbViaOtro.TabStop = true;
             this.rdbViaOtro.Text = "Otro ¿Cuál?";
             this.rdbViaOtro.UseVisualStyleBackColor = true;
+            this.rdbViaOtro.CheckedChanged += new System.EventHandler(this.rdbViaOtro_CheckedChanged);
             // 
             // rdbEnRiel
             // 
@@ -558,6 +540,7 @@
             this.rdbEnRiel.TabStop = true;
             this.rdbEnRiel.Text = "En riel";
             this.rdbEnRiel.UseVisualStyleBackColor = true;
+            this.rdbEnRiel.CheckedChanged += new System.EventHandler(this.rdbEnRiel_CheckedChanged);
             // 
             // rdbPavimentada
             // 
@@ -570,6 +553,7 @@
             this.rdbPavimentada.TabStop = true;
             this.rdbPavimentada.Text = "Pavimentada";
             this.rdbPavimentada.UseVisualStyleBackColor = true;
+            this.rdbPavimentada.CheckedChanged += new System.EventHandler(this.rdbPavimentada_CheckedChanged);
             // 
             // rdbDestapada
             // 
@@ -582,12 +566,13 @@
             this.rdbDestapada.TabStop = true;
             this.rdbDestapada.Text = "Destapada";
             this.rdbDestapada.UseVisualStyleBackColor = true;
+            this.rdbDestapada.CheckedChanged += new System.EventHandler(this.rdbDestapada_CheckedChanged);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.Coral;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(292, 810);
+            this.btnRegresar.Location = new System.Drawing.Point(324, 810);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(145, 56);
             this.btnRegresar.TabIndex = 36;
@@ -599,7 +584,7 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.LawnGreen;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(501, 810);
+            this.btnSiguiente.Location = new System.Drawing.Point(524, 810);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(145, 56);
             this.btnSiguiente.TabIndex = 37;
@@ -612,19 +597,98 @@
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir.Location = new System.Drawing.Point(784, 866);
+            this.btnSalir.Location = new System.Drawing.Point(714, 810);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(118, 37);
+            this.btnSalir.Size = new System.Drawing.Size(139, 56);
             this.btnSalir.TabIndex = 38;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // cmbMunicipio
+            // 
+            this.cmbMunicipio.FormattingEnabled = true;
+            this.cmbMunicipio.Items.AddRange(new object[] {
+            "Alejandría",
+            "Andes",
+            "Apartadó",
+            "Barbosa",
+            "Bello",
+            "Caucasia",
+            "Envigado",
+            "El Retiro",
+            "Guatapé",
+            "Itagüí",
+            "Medellín",
+            "Rionegro",
+            "Sabaneta",
+            "San Vicente",
+            "Santa Fe",
+            "Santo Domingo",
+            "Sonsón",
+            "Turbo",
+            "Yarumal"});
+            this.cmbMunicipio.Location = new System.Drawing.Point(265, 130);
+            this.cmbMunicipio.Name = "cmbMunicipio";
+            this.cmbMunicipio.Size = new System.Drawing.Size(127, 21);
+            this.cmbMunicipio.TabIndex = 39;
+            // 
+            // cmbSubregion
+            // 
+            this.cmbSubregion.FormattingEnabled = true;
+            this.cmbSubregion.Items.AddRange(new object[] {
+            "Bajo Cauca ",
+            "Magdalena Medio ",
+            "Nordeste",
+            "Norte",
+            "Occidente",
+            "Oriente",
+            "Suroeste",
+            "Urabá",
+            "Valle de Aburrá"});
+            this.cmbSubregion.Location = new System.Drawing.Point(509, 130);
+            this.cmbSubregion.Name = "cmbSubregion";
+            this.cmbSubregion.Size = new System.Drawing.Size(127, 21);
+            this.cmbSubregion.TabIndex = 40;
+            // 
+            // numDistanciaPredio
+            // 
+            this.numDistanciaPredio.Location = new System.Drawing.Point(617, 385);
+            this.numDistanciaPredio.Name = "numDistanciaPredio";
+            this.numDistanciaPredio.ReadOnly = true;
+            this.numDistanciaPredio.Size = new System.Drawing.Size(120, 20);
+            this.numDistanciaPredio.TabIndex = 41;
+            // 
+            // numTiempoTransporte
+            // 
+            this.numTiempoTransporte.Location = new System.Drawing.Point(176, 600);
+            this.numTiempoTransporte.Name = "numTiempoTransporte";
+            this.numTiempoTransporte.ReadOnly = true;
+            this.numTiempoTransporte.Size = new System.Drawing.Size(120, 20);
+            this.numTiempoTransporte.TabIndex = 42;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Thistle;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(127, 810);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(145, 56);
+            this.btnMenu.TabIndex = 43;
+            this.btnMenu.Text = "Menú";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // InformacionGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 915);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.numTiempoTransporte);
+            this.Controls.Add(this.numDistanciaPredio);
+            this.Controls.Add(this.cmbSubregion);
+            this.Controls.Add(this.cmbMunicipio);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnRegresar);
@@ -632,14 +696,12 @@
             this.Controls.Add(this.lblViaCabeceraPredio);
             this.Controls.Add(this.lbl8);
             this.Controls.Add(this.lblHoras);
-            this.Controls.Add(this.txtTiempoTransporte);
             this.Controls.Add(this.lbl7);
             this.Controls.Add(this.lblTiempoDesplazamiento);
             this.Controls.Add(this.grbTransporte);
             this.Controls.Add(this.lblTransporte);
             this.Controls.Add(this.lbl6);
             this.Controls.Add(this.lblKm);
-            this.Controls.Add(this.txtDistanciaPredio);
             this.Controls.Add(this.lbl5);
             this.Controls.Add(this.lblDistanciaCabeceraPredio);
             this.Controls.Add(this.lbl4);
@@ -652,9 +714,7 @@
             this.Controls.Add(this.txtVereda);
             this.Controls.Add(this.lblVereda);
             this.Controls.Add(this.lbl1);
-            this.Controls.Add(this.txtSubregion);
             this.Controls.Add(this.lblSubregion);
-            this.Controls.Add(this.txtMunicipio);
             this.Controls.Add(this.lblMunicipio);
             this.Controls.Add(this.TituloInfoGeneral);
             this.Name = "InformacionGeneral";
@@ -665,6 +725,8 @@
             this.grbTransporte.PerformLayout();
             this.grbVia.ResumeLayout(false);
             this.grbVia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDistanciaPredio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoTransporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -674,9 +736,7 @@
 
         private System.Windows.Forms.Label TituloInfoGeneral;
         private System.Windows.Forms.Label lblMunicipio;
-        private System.Windows.Forms.TextBox txtMunicipio;
         private System.Windows.Forms.Label lblSubregion;
-        private System.Windows.Forms.TextBox txtSubregion;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.TextBox txtVereda;
         private System.Windows.Forms.Label lblVereda;
@@ -694,7 +754,6 @@
         private System.Windows.Forms.Label lbl4;
         private System.Windows.Forms.Label lblDistanciaCabeceraPredio;
         private System.Windows.Forms.Label lbl5;
-        private System.Windows.Forms.TextBox txtDistanciaPredio;
         private System.Windows.Forms.Label lblKm;
         private System.Windows.Forms.Label lbl6;
         private System.Windows.Forms.Label lblTransporte;
@@ -708,7 +767,6 @@
         private System.Windows.Forms.RadioButton rdbAPie;
         private System.Windows.Forms.Label lblTiempoDesplazamiento;
         private System.Windows.Forms.Label lbl7;
-        private System.Windows.Forms.TextBox txtTiempoTransporte;
         private System.Windows.Forms.Label lblHoras;
         private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.Label lblViaCabeceraPredio;
@@ -722,5 +780,10 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ComboBox cmbMunicipio;
+        private System.Windows.Forms.ComboBox cmbSubregion;
+        private System.Windows.Forms.NumericUpDown numDistanciaPredio;
+        private System.Windows.Forms.NumericUpDown numTiempoTransporte;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

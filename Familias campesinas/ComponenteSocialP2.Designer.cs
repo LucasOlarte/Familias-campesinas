@@ -32,14 +32,14 @@
             this.lbl8 = new System.Windows.Forms.Label();
             this.lblTiempoOrganizacion = new System.Windows.Forms.Label();
             this.grbTiempoOrganizaciones = new System.Windows.Forms.GroupBox();
+            this.numTiempoOtraOrganizacion = new System.Windows.Forms.NumericUpDown();
+            this.numTiempoCooperativas = new System.Windows.Forms.NumericUpDown();
+            this.numTiempoAsociaProd = new System.Windows.Forms.NumericUpDown();
+            this.numTiempoJAC = new System.Windows.Forms.NumericUpDown();
             this.lblAños3 = new System.Windows.Forms.Label();
-            this.txtTiempoCooperativas = new System.Windows.Forms.TextBox();
             this.lblAños4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblAños2 = new System.Windows.Forms.Label();
             this.lblAños = new System.Windows.Forms.Label();
-            this.txtTiempoAsociacionProductores = new System.Windows.Forms.TextBox();
-            this.txtTiempoJuntaAccionComunal = new System.Windows.Forms.TextBox();
             this.rdbOtroTiempoOrganizaciones = new System.Windows.Forms.RadioButton();
             this.rdbCooperativas = new System.Windows.Forms.RadioButton();
             this.rdbAsociacionProductores = new System.Windows.Forms.RadioButton();
@@ -52,16 +52,22 @@
             this.lbl10 = new System.Windows.Forms.Label();
             this.lblNucleoVereda = new System.Windows.Forms.Label();
             this.grbNacidosEnVereda = new System.Windows.Forms.GroupBox();
-            this.txtNacidosEnLaVereda = new System.Windows.Forms.TextBox();
             this.lblCuantosNacieron = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.numNacidosEnLaVereda = new System.Windows.Forms.NumericUpDown();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.grbTiempoOrganizaciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoOtraOrganizacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoCooperativas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoAsociaProd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoJAC)).BeginInit();
             this.grbNucleoCampesino.SuspendLayout();
             this.grbNacidosEnVereda.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNacidosEnLaVereda)).BeginInit();
             this.SuspendLayout();
             // 
             // TituloComponenteSocial
@@ -97,14 +103,14 @@
             // 
             // grbTiempoOrganizaciones
             // 
+            this.grbTiempoOrganizaciones.Controls.Add(this.numTiempoOtraOrganizacion);
+            this.grbTiempoOrganizaciones.Controls.Add(this.numTiempoCooperativas);
+            this.grbTiempoOrganizaciones.Controls.Add(this.numTiempoAsociaProd);
+            this.grbTiempoOrganizaciones.Controls.Add(this.numTiempoJAC);
             this.grbTiempoOrganizaciones.Controls.Add(this.lblAños3);
-            this.grbTiempoOrganizaciones.Controls.Add(this.txtTiempoCooperativas);
             this.grbTiempoOrganizaciones.Controls.Add(this.lblAños4);
-            this.grbTiempoOrganizaciones.Controls.Add(this.textBox2);
             this.grbTiempoOrganizaciones.Controls.Add(this.lblAños2);
             this.grbTiempoOrganizaciones.Controls.Add(this.lblAños);
-            this.grbTiempoOrganizaciones.Controls.Add(this.txtTiempoAsociacionProductores);
-            this.grbTiempoOrganizaciones.Controls.Add(this.txtTiempoJuntaAccionComunal);
             this.grbTiempoOrganizaciones.Controls.Add(this.rdbOtroTiempoOrganizaciones);
             this.grbTiempoOrganizaciones.Controls.Add(this.rdbCooperativas);
             this.grbTiempoOrganizaciones.Controls.Add(this.rdbAsociacionProductores);
@@ -112,48 +118,62 @@
             this.grbTiempoOrganizaciones.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbTiempoOrganizaciones.Location = new System.Drawing.Point(163, 164);
             this.grbTiempoOrganizaciones.Name = "grbTiempoOrganizaciones";
-            this.grbTiempoOrganizaciones.Size = new System.Drawing.Size(651, 98);
+            this.grbTiempoOrganizaciones.Size = new System.Drawing.Size(718, 98);
             this.grbTiempoOrganizaciones.TabIndex = 37;
             this.grbTiempoOrganizaciones.TabStop = false;
             this.grbTiempoOrganizaciones.Text = "Tiempo en la organización";
+            // 
+            // numTiempoOtraOrganizacion
+            // 
+            this.numTiempoOtraOrganizacion.Enabled = false;
+            this.numTiempoOtraOrganizacion.Location = new System.Drawing.Point(520, 58);
+            this.numTiempoOtraOrganizacion.Name = "numTiempoOtraOrganizacion";
+            this.numTiempoOtraOrganizacion.Size = new System.Drawing.Size(77, 28);
+            this.numTiempoOtraOrganizacion.TabIndex = 49;
+            // 
+            // numTiempoCooperativas
+            // 
+            this.numTiempoCooperativas.Enabled = false;
+            this.numTiempoCooperativas.Location = new System.Drawing.Point(520, 27);
+            this.numTiempoCooperativas.Name = "numTiempoCooperativas";
+            this.numTiempoCooperativas.Size = new System.Drawing.Size(77, 28);
+            this.numTiempoCooperativas.TabIndex = 48;
+            // 
+            // numTiempoAsociaProd
+            // 
+            this.numTiempoAsociaProd.Enabled = false;
+            this.numTiempoAsociaProd.Location = new System.Drawing.Point(242, 58);
+            this.numTiempoAsociaProd.Name = "numTiempoAsociaProd";
+            this.numTiempoAsociaProd.Size = new System.Drawing.Size(77, 28);
+            this.numTiempoAsociaProd.TabIndex = 47;
+            // 
+            // numTiempoJAC
+            // 
+            this.numTiempoJAC.Enabled = false;
+            this.numTiempoJAC.Location = new System.Drawing.Point(242, 24);
+            this.numTiempoJAC.Name = "numTiempoJAC";
+            this.numTiempoJAC.Size = new System.Drawing.Size(77, 28);
+            this.numTiempoJAC.TabIndex = 46;
             // 
             // lblAños3
             // 
             this.lblAños3.AutoSize = true;
             this.lblAños3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAños3.Location = new System.Drawing.Point(593, 29);
+            this.lblAños3.Location = new System.Drawing.Point(617, 29);
             this.lblAños3.Name = "lblAños3";
             this.lblAños3.Size = new System.Drawing.Size(58, 21);
             this.lblAños3.TabIndex = 43;
             this.lblAños3.Text = "(Años)";
             // 
-            // txtTiempoCooperativas
-            // 
-            this.txtTiempoCooperativas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoCooperativas.Location = new System.Drawing.Point(510, 26);
-            this.txtTiempoCooperativas.Name = "txtTiempoCooperativas";
-            this.txtTiempoCooperativas.Size = new System.Drawing.Size(77, 28);
-            this.txtTiempoCooperativas.TabIndex = 42;
-            this.txtTiempoCooperativas.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblAños4
             // 
             this.lblAños4.AutoSize = true;
             this.lblAños4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAños4.Location = new System.Drawing.Point(547, 60);
+            this.lblAños4.Location = new System.Drawing.Point(617, 60);
             this.lblAños4.Name = "lblAños4";
             this.lblAños4.Size = new System.Drawing.Size(58, 21);
             this.lblAños4.TabIndex = 41;
             this.lblAños4.Text = "(Años)";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(464, 57);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(77, 28);
-            this.textBox2.TabIndex = 40;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblAños2
             // 
@@ -169,29 +189,11 @@
             // 
             this.lblAños.AutoSize = true;
             this.lblAños.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAños.Location = new System.Drawing.Point(313, 29);
+            this.lblAños.Location = new System.Drawing.Point(325, 29);
             this.lblAños.Name = "lblAños";
             this.lblAños.Size = new System.Drawing.Size(58, 21);
             this.lblAños.TabIndex = 38;
             this.lblAños.Text = "(Años)";
-            // 
-            // txtTiempoAsociacionProductores
-            // 
-            this.txtTiempoAsociacionProductores.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoAsociacionProductores.Location = new System.Drawing.Point(242, 57);
-            this.txtTiempoAsociacionProductores.Name = "txtTiempoAsociacionProductores";
-            this.txtTiempoAsociacionProductores.Size = new System.Drawing.Size(77, 28);
-            this.txtTiempoAsociacionProductores.TabIndex = 33;
-            this.txtTiempoAsociacionProductores.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtTiempoJuntaAccionComunal
-            // 
-            this.txtTiempoJuntaAccionComunal.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoJuntaAccionComunal.Location = new System.Drawing.Point(230, 26);
-            this.txtTiempoJuntaAccionComunal.Name = "txtTiempoJuntaAccionComunal";
-            this.txtTiempoJuntaAccionComunal.Size = new System.Drawing.Size(77, 28);
-            this.txtTiempoJuntaAccionComunal.TabIndex = 32;
-            this.txtTiempoJuntaAccionComunal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // rdbOtroTiempoOrganizaciones
             // 
@@ -204,18 +206,20 @@
             this.rdbOtroTiempoOrganizaciones.TabStop = true;
             this.rdbOtroTiempoOrganizaciones.Text = "Otras";
             this.rdbOtroTiempoOrganizaciones.UseVisualStyleBackColor = true;
+            this.rdbOtroTiempoOrganizaciones.CheckedChanged += new System.EventHandler(this.rdbOtroTiempoOrganizaciones_CheckedChanged);
             // 
             // rdbCooperativas
             // 
             this.rdbCooperativas.AutoSize = true;
             this.rdbCooperativas.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCooperativas.Location = new System.Drawing.Point(377, 27);
+            this.rdbCooperativas.Location = new System.Drawing.Point(387, 27);
             this.rdbCooperativas.Name = "rdbCooperativas";
             this.rdbCooperativas.Size = new System.Drawing.Size(127, 25);
             this.rdbCooperativas.TabIndex = 30;
             this.rdbCooperativas.TabStop = true;
             this.rdbCooperativas.Text = "Cooperativas";
             this.rdbCooperativas.UseVisualStyleBackColor = true;
+            this.rdbCooperativas.CheckedChanged += new System.EventHandler(this.rdbCooperativas_CheckedChanged);
             // 
             // rdbAsociacionProductores
             // 
@@ -228,6 +232,7 @@
             this.rdbAsociacionProductores.TabStop = true;
             this.rdbAsociacionProductores.Text = "Asociación de productores";
             this.rdbAsociacionProductores.UseVisualStyleBackColor = true;
+            this.rdbAsociacionProductores.CheckedChanged += new System.EventHandler(this.rdbAsociacionProductores_CheckedChanged);
             // 
             // rdbJuntaDeAccionComunal
             // 
@@ -240,6 +245,7 @@
             this.rdbJuntaDeAccionComunal.TabStop = true;
             this.rdbJuntaDeAccionComunal.Text = "Junta de acción comunal";
             this.rdbJuntaDeAccionComunal.UseVisualStyleBackColor = true;
+            this.rdbJuntaDeAccionComunal.CheckedChanged += new System.EventHandler(this.rdbJuntaDeAccionComunal_CheckedChanged);
             // 
             // lbl9
             // 
@@ -319,26 +325,16 @@
             // 
             // grbNacidosEnVereda
             // 
-            this.grbNacidosEnVereda.Controls.Add(this.txtNacidosEnLaVereda);
+            this.grbNacidosEnVereda.Controls.Add(this.numNacidosEnLaVereda);
             this.grbNacidosEnVereda.Controls.Add(this.lblCuantosNacieron);
             this.grbNacidosEnVereda.Controls.Add(this.radioButton1);
             this.grbNacidosEnVereda.Controls.Add(this.radioButton2);
             this.grbNacidosEnVereda.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbNacidosEnVereda.Location = new System.Drawing.Point(163, 378);
             this.grbNacidosEnVereda.Name = "grbNacidosEnVereda";
-            this.grbNacidosEnVereda.Size = new System.Drawing.Size(478, 68);
+            this.grbNacidosEnVereda.Size = new System.Drawing.Size(492, 68);
             this.grbNacidosEnVereda.TabIndex = 41;
             this.grbNacidosEnVereda.TabStop = false;
-            this.grbNacidosEnVereda.Text = "Todo el núcleo familiar nació en la vererda";
-            // 
-            // txtNacidosEnLaVereda
-            // 
-            this.txtNacidosEnLaVereda.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNacidosEnLaVereda.Location = new System.Drawing.Point(387, 26);
-            this.txtNacidosEnLaVereda.Name = "txtNacidosEnLaVereda";
-            this.txtNacidosEnLaVereda.Size = new System.Drawing.Size(71, 28);
-            this.txtNacidosEnLaVereda.TabIndex = 30;
-            this.txtNacidosEnLaVereda.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCuantosNacieron
             // 
@@ -346,9 +342,9 @@
             this.lblCuantosNacieron.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCuantosNacieron.Location = new System.Drawing.Point(119, 29);
             this.lblCuantosNacieron.Name = "lblCuantosNacieron";
-            this.lblCuantosNacieron.Size = new System.Drawing.Size(262, 21);
+            this.lblCuantosNacieron.Size = new System.Drawing.Size(258, 21);
             this.lblCuantosNacieron.TabIndex = 31;
-            this.lblCuantosNacieron.Text = "¿Cuántos nacieron en la vereda?:";
+            this.lblCuantosNacieron.Text = "¿Cuántos nacieron en la vereda?";
             // 
             // radioButton1
             // 
@@ -379,9 +375,9 @@
             this.btnSalir.BackColor = System.Drawing.Color.Crimson;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir.Location = new System.Drawing.Point(784, 568);
+            this.btnSalir.Location = new System.Drawing.Point(683, 512);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(118, 37);
+            this.btnSalir.Size = new System.Drawing.Size(145, 56);
             this.btnSalir.TabIndex = 45;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -391,18 +387,19 @@
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.LawnGreen;
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(501, 512);
+            this.btnSiguiente.Location = new System.Drawing.Point(492, 512);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(145, 56);
             this.btnSiguiente.TabIndex = 44;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.Coral;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(292, 512);
+            this.btnRegresar.Location = new System.Drawing.Point(301, 512);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(145, 56);
             this.btnRegresar.TabIndex = 43;
@@ -410,11 +407,32 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // numNacidosEnLaVereda
+            // 
+            this.numNacidosEnLaVereda.Location = new System.Drawing.Point(383, 27);
+            this.numNacidosEnLaVereda.Name = "numNacidosEnLaVereda";
+            this.numNacidosEnLaVereda.ReadOnly = true;
+            this.numNacidosEnLaVereda.Size = new System.Drawing.Size(95, 28);
+            this.numNacidosEnLaVereda.TabIndex = 32;
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.Thistle;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(109, 512);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(145, 56);
+            this.btnMenu.TabIndex = 65;
+            this.btnMenu.Text = "Menú";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // ComponenteSocialP2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 617);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnRegresar);
@@ -432,10 +450,15 @@
             this.Text = "ComponenteSocialP2";
             this.grbTiempoOrganizaciones.ResumeLayout(false);
             this.grbTiempoOrganizaciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoOtraOrganizacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoCooperativas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoAsociaProd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTiempoJAC)).EndInit();
             this.grbNucleoCampesino.ResumeLayout(false);
             this.grbNucleoCampesino.PerformLayout();
             this.grbNacidosEnVereda.ResumeLayout(false);
             this.grbNacidosEnVereda.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNacidosEnLaVereda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,18 +470,14 @@
         private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.Label lblTiempoOrganizacion;
         private System.Windows.Forms.GroupBox grbTiempoOrganizaciones;
-        private System.Windows.Forms.TextBox txtTiempoJuntaAccionComunal;
         private System.Windows.Forms.RadioButton rdbOtroTiempoOrganizaciones;
         private System.Windows.Forms.RadioButton rdbCooperativas;
         private System.Windows.Forms.RadioButton rdbAsociacionProductores;
         private System.Windows.Forms.RadioButton rdbJuntaDeAccionComunal;
         private System.Windows.Forms.Label lblAños2;
         private System.Windows.Forms.Label lblAños;
-        private System.Windows.Forms.TextBox txtTiempoAsociacionProductores;
         private System.Windows.Forms.Label lblAños3;
-        private System.Windows.Forms.TextBox txtTiempoCooperativas;
         private System.Windows.Forms.Label lblAños4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lbl9;
         private System.Windows.Forms.Label lblNucleoFamiliarCampesino;
         private System.Windows.Forms.GroupBox grbNucleoCampesino;
@@ -469,10 +488,15 @@
         private System.Windows.Forms.GroupBox grbNacidosEnVereda;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox txtNacidosEnLaVereda;
         private System.Windows.Forms.Label lblCuantosNacieron;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.NumericUpDown numTiempoCooperativas;
+        private System.Windows.Forms.NumericUpDown numTiempoAsociaProd;
+        private System.Windows.Forms.NumericUpDown numTiempoJAC;
+        private System.Windows.Forms.NumericUpDown numTiempoOtraOrganizacion;
+        private System.Windows.Forms.NumericUpDown numNacidosEnLaVereda;
+        private System.Windows.Forms.Button btnMenu;
     }
 }
