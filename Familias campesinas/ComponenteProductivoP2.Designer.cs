@@ -40,6 +40,7 @@
             this.lblManejoControlPlagas = new System.Windows.Forms.Label();
             this.grbControlDePlagas = new System.Windows.Forms.GroupBox();
             this.grbMetodoDeControl = new System.Windows.Forms.GroupBox();
+            this.rdbOtroMetodoControl = new System.Windows.Forms.RadioButton();
             this.txtOtroControlDePlagas = new System.Windows.Forms.TextBox();
             this.rdbControlFisico = new System.Windows.Forms.RadioButton();
             this.rdbControlBiologico = new System.Windows.Forms.RadioButton();
@@ -51,7 +52,6 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.rdbOtroMetodoControl = new System.Windows.Forms.RadioButton();
             this.btnMenu = new System.Windows.Forms.Button();
             this.grbBuenasPracticas.SuspendLayout();
             this.grbControlDePlagas.SuspendLayout();
@@ -193,7 +193,18 @@
             this.grbMetodoDeControl.Size = new System.Drawing.Size(474, 94);
             this.grbMetodoDeControl.TabIndex = 52;
             this.grbMetodoDeControl.TabStop = false;
-            this.grbMetodoDeControl.Text = "Método de control";
+            // 
+            // rdbOtroMetodoControl
+            // 
+            this.rdbOtroMetodoControl.AutoSize = true;
+            this.rdbOtroMetodoControl.Location = new System.Drawing.Point(6, 53);
+            this.rdbOtroMetodoControl.Name = "rdbOtroMetodoControl";
+            this.rdbOtroMetodoControl.Size = new System.Drawing.Size(118, 25);
+            this.rdbOtroMetodoControl.TabIndex = 58;
+            this.rdbOtroMetodoControl.TabStop = true;
+            this.rdbOtroMetodoControl.Text = "Otro ¿Cuál?";
+            this.rdbOtroMetodoControl.UseVisualStyleBackColor = true;
+            this.rdbOtroMetodoControl.CheckedChanged += new System.EventHandler(this.rdbOtroMetodoControl_CheckedChanged);
             // 
             // txtOtroControlDePlagas
             // 
@@ -327,18 +338,6 @@
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // rdbOtroMetodoControl
-            // 
-            this.rdbOtroMetodoControl.AutoSize = true;
-            this.rdbOtroMetodoControl.Location = new System.Drawing.Point(6, 53);
-            this.rdbOtroMetodoControl.Name = "rdbOtroMetodoControl";
-            this.rdbOtroMetodoControl.Size = new System.Drawing.Size(118, 25);
-            this.rdbOtroMetodoControl.TabIndex = 58;
-            this.rdbOtroMetodoControl.TabStop = true;
-            this.rdbOtroMetodoControl.Text = "Otro ¿Cuál?";
-            this.rdbOtroMetodoControl.UseVisualStyleBackColor = true;
-            this.rdbOtroMetodoControl.CheckedChanged += new System.EventHandler(this.rdbOtroMetodoControl_CheckedChanged);
             // 
             // btnMenu
             // 

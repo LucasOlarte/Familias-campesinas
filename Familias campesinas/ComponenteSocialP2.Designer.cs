@@ -52,13 +52,13 @@
             this.lbl10 = new System.Windows.Forms.Label();
             this.lblNucleoVereda = new System.Windows.Forms.Label();
             this.grbNacidosEnVereda = new System.Windows.Forms.GroupBox();
+            this.numNacidosEnLaVereda = new System.Windows.Forms.NumericUpDown();
             this.lblCuantosNacieron = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.numNacidosEnLaVereda = new System.Windows.Forms.NumericUpDown();
             this.btnMenu = new System.Windows.Forms.Button();
             this.grbTiempoOrganizaciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numTiempoOtraOrganizacion)).BeginInit();
@@ -121,7 +121,6 @@
             this.grbTiempoOrganizaciones.Size = new System.Drawing.Size(718, 98);
             this.grbTiempoOrganizaciones.TabIndex = 37;
             this.grbTiempoOrganizaciones.TabStop = false;
-            this.grbTiempoOrganizaciones.Text = "Tiempo en la organización";
             // 
             // numTiempoOtraOrganizacion
             // 
@@ -277,7 +276,6 @@
             this.grbNucleoCampesino.Size = new System.Drawing.Size(227, 63);
             this.grbNucleoCampesino.TabIndex = 40;
             this.grbNucleoCampesino.TabStop = false;
-            this.grbNucleoCampesino.Text = "Núcleo familiar campesino";
             // 
             // rdbNoNucleoCampesino
             // 
@@ -335,6 +333,14 @@
             this.grbNacidosEnVereda.Size = new System.Drawing.Size(492, 68);
             this.grbNacidosEnVereda.TabIndex = 41;
             this.grbNacidosEnVereda.TabStop = false;
+            // 
+            // numNacidosEnLaVereda
+            // 
+            this.numNacidosEnLaVereda.Location = new System.Drawing.Point(383, 27);
+            this.numNacidosEnLaVereda.Name = "numNacidosEnLaVereda";
+            this.numNacidosEnLaVereda.ReadOnly = true;
+            this.numNacidosEnLaVereda.Size = new System.Drawing.Size(95, 28);
+            this.numNacidosEnLaVereda.TabIndex = 32;
             // 
             // lblCuantosNacieron
             // 
@@ -406,14 +412,6 @@
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // numNacidosEnLaVereda
-            // 
-            this.numNacidosEnLaVereda.Location = new System.Drawing.Point(383, 27);
-            this.numNacidosEnLaVereda.Name = "numNacidosEnLaVereda";
-            this.numNacidosEnLaVereda.ReadOnly = true;
-            this.numNacidosEnLaVereda.Size = new System.Drawing.Size(95, 28);
-            this.numNacidosEnLaVereda.TabIndex = 32;
             // 
             // btnMenu
             // 

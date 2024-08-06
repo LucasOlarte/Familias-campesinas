@@ -265,7 +265,6 @@
             this.grbDesplazamientoForzado.Size = new System.Drawing.Size(647, 63);
             this.grbDesplazamientoForzado.TabIndex = 27;
             this.grbDesplazamientoForzado.TabStop = false;
-            this.grbDesplazamientoForzado.Text = "Desplazamiento forzado";
             // 
             // numAñosDesplazamiento
             // 
@@ -360,7 +359,6 @@
             this.grbRetornadoAlPredio.Size = new System.Drawing.Size(587, 63);
             this.grbRetornadoAlPredio.TabIndex = 30;
             this.grbRetornadoAlPredio.TabStop = false;
-            this.grbRetornadoAlPredio.Text = "Retornado al predio";
             // 
             // numTiempoRetornado
             // 
@@ -449,7 +447,6 @@
             this.grbNativoMunicipio.Size = new System.Drawing.Size(481, 90);
             this.grbNativoMunicipio.TabIndex = 34;
             this.grbNativoMunicipio.TabStop = false;
-            this.grbNativoMunicipio.Text = "Nativo del municipio";
             // 
             // txtLugarProveniencia
             // 
@@ -528,7 +525,6 @@
             this.grbSubsidioDelEstado.Size = new System.Drawing.Size(518, 65);
             this.grbSubsidioDelEstado.TabIndex = 35;
             this.grbSubsidioDelEstado.TabStop = false;
-            this.grbSubsidioDelEstado.Text = "Subsidio del Estado";
             // 
             // txtSubsidio
             // 
@@ -611,7 +607,6 @@
             this.grbOrganizaciones.Size = new System.Drawing.Size(701, 124);
             this.grbOrganizaciones.TabIndex = 36;
             this.grbOrganizaciones.TabStop = false;
-            this.grbOrganizaciones.Text = "Organizaciones";
             // 
             // rdbNingunaOrganizacion
             // 

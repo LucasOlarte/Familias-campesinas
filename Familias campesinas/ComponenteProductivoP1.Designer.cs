@@ -252,7 +252,6 @@
             this.grbTituloDelPredio.Size = new System.Drawing.Size(187, 57);
             this.grbTituloDelPredio.TabIndex = 52;
             this.grbTituloDelPredio.TabStop = false;
-            this.grbTituloDelPredio.Text = "El predio posee título";
             // 
             // rdbNoTituloPredio
             // 

@@ -197,7 +197,6 @@
             this.grbPredio.Size = new System.Drawing.Size(483, 92);
             this.grbPredio.TabIndex = 21;
             this.grbPredio.TabStop = false;
-            this.grbPredio.Text = "Predio";
             this.grbPredio.Enter += new System.EventHandler(this.grbPredio_Enter);
             // 
             // txtPredioOtro
@@ -335,12 +334,11 @@
             this.grbTransporte.Controls.Add(this.rdbBestia);
             this.grbTransporte.Controls.Add(this.rdbAPie);
             this.grbTransporte.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbTransporte.Location = new System.Drawing.Point(276, 466);
+            this.grbTransporte.Location = new System.Drawing.Point(172, 466);
             this.grbTransporte.Name = "grbTransporte";
             this.grbTransporte.Size = new System.Drawing.Size(483, 90);
             this.grbTransporte.TabIndex = 25;
             this.grbTransporte.TabStop = false;
-            this.grbTransporte.Text = "Transporte";
             // 
             // rdbCarro
             // 
@@ -488,12 +486,11 @@
             this.grbVia.Controls.Add(this.rdbPavimentada);
             this.grbVia.Controls.Add(this.rdbDestapada);
             this.grbVia.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbVia.Location = new System.Drawing.Point(276, 677);
+            this.grbVia.Location = new System.Drawing.Point(172, 677);
             this.grbVia.Name = "grbVia";
             this.grbVia.Size = new System.Drawing.Size(483, 95);
             this.grbVia.TabIndex = 27;
             this.grbVia.TabStop = false;
-            this.grbVia.Text = "Vía";
             // 
             // rdbEmpedrada
             // 

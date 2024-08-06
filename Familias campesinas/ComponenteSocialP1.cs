@@ -19,7 +19,16 @@ namespace Familias_campesinas
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombreApellidoResponsable.Text) || string.IsNullOrEmpty(numNumeroDocumento.Text) || string.IsNullOrEmpty(numNumeroContacto.Text) || string.IsNullOrEmpty(txtCorreo.Text) || string.IsNullOrEmpty(grbCampesino.Text) || string.IsNullOrEmpty(grbDesplazamientoForzado.Text) || string.IsNullOrEmpty(grbRetornadoAlPredio.Text) || string.IsNullOrEmpty(grbNativoMunicipio.Text) || string.IsNullOrEmpty(grbSubsidioDelEstado.Text) || string.IsNullOrEmpty(grbOrganizaciones.Text))
+            if (string.IsNullOrEmpty(txtNombreApellidoResponsable.Text) ||
+                string.IsNullOrEmpty(numNumeroDocumento.Text) ||
+                string.IsNullOrEmpty(numNumeroContacto.Text) ||
+                string.IsNullOrEmpty(txtCorreo.Text) ||
+                !IsGroupBoxFilled(grbCampesino) ||
+                !IsGroupBoxFilled(grbDesplazamientoForzado) ||
+                !IsGroupBoxFilled(grbRetornadoAlPredio) ||
+                !IsGroupBoxFilled(grbNativoMunicipio) ||
+                !IsGroupBoxFilled(grbSubsidioDelEstado) ||
+                !IsGroupBoxFilled(grbOrganizaciones))
             {
                 MessageBox.Show("Faltan campos por llenar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -29,6 +38,11 @@ namespace Familias_campesinas
                 componenteSocialP2.Show();
                 this.Hide();
             }
+        }
+
+        private bool IsGroupBoxFilled(GroupBox grbCampesino)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
